@@ -1870,6 +1870,18 @@ sequencing_center: # TOREVIEW
   description: >
     Name of the center that provided the sequence files.
 
+shipment_date: # TOREVIEW
+  description: >
+    The date item was shipped in YYYY-MM-DD format.
+
+shipment_destination: # TOREVIEW
+  description: >
+    The destination of the shipment.
+
+shipment_origin: # TOREVIEW
+  description: >
+    The origin of the shipment.
+
 shortest_dimension:
   description: >
     Numeric value that represents the shortest dimension of the sample, measured in millimeters.

@@ -107,7 +107,23 @@ properties:
     term:
       $ref: "_terms.yaml#/well_number"
     type: string
-    
+  shipment_date:
+    term:
+      $ref: "_terms.yaml#/shipment_date"
+    type: string
+    pattern: "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+  shipment_destination:
+    term:
+      $ref: "_terms.yaml#/shipment_destination"
+    enum:
+      - "Baylor College of Medicine"
+      - "Washington University"
+      - "HudsonAlpha"
+      - "Broad Institute"
+  shipment_origin:
+    term:
+      $ref: "_terms.yaml#shipment_origin"
+    type: string
   samples:
     $ref: "_definitions.yaml#/to_one"
   centers:
