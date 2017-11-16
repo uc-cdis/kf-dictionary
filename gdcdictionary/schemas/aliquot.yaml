@@ -36,7 +36,6 @@ links:
     target_type: sample
     required: true
 
-
 constraints: null
 
 properties:
@@ -125,6 +124,4 @@ properties:
       $ref: "_terms.yaml#shipment_origin"
     type: string
   samples:
-    $ref: "_definitions.yaml#/to_one"
-  centers:
     $ref: "_definitions.yaml#/to_one"
