@@ -49,8 +49,8 @@ properties:
     term:
       $ref: "_terms.yaml#/cause_of_death"
     enum:
-      - Cancer Related
-      - Not Cancer Related
+      - Disease Related
+      - Not Disease Related
       - Not Reported
       - Unknown
 
