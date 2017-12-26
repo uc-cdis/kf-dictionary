@@ -1643,6 +1643,14 @@ preservation_method:
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=5432521&version=1.0"
 
+primary_anatomic_site:
+  description: >
+    Uberon term, in ID form UBERON:NNNNNNN for the anatomic site primarily affected.
+  termDef:
+    term: Anatomical Entity
+    source: Uberon
+    term_url: "http://uberon.org/"
+
 primary_diagnosis:
   description: >
     Text term for the structural pattern of cancer cells used to define a microscopic diagnosis.
