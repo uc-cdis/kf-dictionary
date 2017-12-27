@@ -44,7 +44,7 @@ adverse_event:
     cde_version: 1.1
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=3125302&version=1.1"
 
-age_at_diagnosis:
+age_at_diagnosis_days:
   description: >
     Age at the time of diagnosis expressed in number of days since birth.
   termDef:
@@ -53,6 +53,16 @@ age_at_diagnosis:
     cde_id: 3225640
     cde_version: 2.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=3225640&version=2.0"
+
+age_at_last_follow_up_days:
+  description: >
+    The age in days at the last follow-up or death of the patient.
+  termDef:
+    term: null
+    source: null
+    cde_id: null
+    cde_version: null
+    term_url: null
 
 ajcc_clinical_m:
   description: >
@@ -1439,15 +1449,15 @@ oct_embedded:
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=5432538&version=1.0"
 
-overall_survival:
+overall_survival_time_days:
   description: >
-    Number of days between the date used for index and the patient's date of death or the date the patient was last known to be alive.
+    The number of days after diagnosis to the last follow-up or death of the patient.
   termDef:
-    term: null
-    source: null
-    cde_id: null
-    cde_version: null
-    term_url: null
+    term: Diagnosis To Last Communication Contact Time Day Count
+    source: caDSR
+    cde_id: 3226269
+    cde_version: 1.0
+    term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=3226269&version=1.0"
 
 pack_years_smoked:
   description: >

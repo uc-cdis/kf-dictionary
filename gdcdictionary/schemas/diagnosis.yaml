@@ -30,10 +30,9 @@ links:
     required: true
 
 required:
-  - age_at_diagnosis
+  - age_at_diagnosis_days
   - primary_diagnosis
   - primary_anatomic_site
-  - vital_status
 
 uniqueKeys:
   #unclear if want submitter ID for clinical
@@ -43,35 +42,14 @@ uniqueKeys:
 properties:
   $ref_ubiq: "_definitions.yaml#/ubiquitous_properties"
   
-  age_at_diagnosis:
+  age_at_diagnosis_days:
     term:
-      $ref: "_terms.yaml#/age_at_diagnosis"
+      $ref: "_terms.yaml#/age_at_diagnosis_days"
     type:
-      - number
+      - integer
       - "null"
     maximum: 32872
     minimum: 0
-
-  days_to_death:
-    term:
-      $ref: "_terms.yaml#/days_to_death"
-    type: number
-    maximum: 32872
-    minimum: 0
-
-  days_to_last_follow_up:
-    term:
-      $ref: "_terms.yaml#/days_to_last_follow_up"
-    type:
-      - number
-      - "null"
-
-  days_to_last_known_disease_status:
-    term:
-      $ref: "_terms.yaml#/days_to_last_known_disease_status"
-    type:
-      - number
-      - "null"
 
   primary_anatomic_site:
     term:
@@ -85,14 +63,5 @@ properties:
       $ref: "_terms.yaml#/primary_diagnosis"
     type: string
 
-  vital_status:
-    term:
-      $ref: "_terms.yaml#/vital_status"
-    enum:
-      - alive
-      - dead
-      - lost to follow-up
-      - unknown
-      - not reported
   cases:
     $ref: "_definitions.yaml#/to_one"

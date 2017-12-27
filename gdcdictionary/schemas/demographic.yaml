@@ -54,15 +54,14 @@ properties:
       - Not Reported
       - Unknown
 
-  days_to_birth:
+  age_at_last_follow_up_days:
     term:
-      $ref: "_terms.yaml#/days_to_birth"
-    type: integer
-
-  days_to_death:
-    term:
-      $ref: "_terms.yaml#/days_to_death"
-    type: integer
+      $ref: "_terms.yaml#/age_at_last_follow_up_days"
+    type:
+      - integer
+      - "null"
+    maximum: 32872
+    minimum: 0
 
   gender:
     term:
@@ -97,18 +96,6 @@ properties:
       - Unknown
       - not reported
       - not allowed to collect
-
-  year_of_birth:
-    term:
-      $ref: "_terms.yaml#/year_of_birth"
-    type:
-      - number
-      - "null"
-
-  year_of_death:
-    term:
-      $ref: "_terms.yaml#/year_of_death"
-    type: number
 
   vital_status:
     term:
