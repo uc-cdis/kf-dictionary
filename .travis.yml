@@ -16,5 +16,5 @@ deploy:
   upload-dir: kf-dictionary/$TRAVIS_BRANCH
   skip_cleanup: true
   on:
-    repo: kids-first/kf-dictionary
+    repo: uc-cdis/kf-dictionary
     all_branches: true
