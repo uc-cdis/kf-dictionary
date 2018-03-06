@@ -22,10 +22,10 @@ systemProperties:
   - error_type
 
 links:
-  - name: cases
+  - name: participants
     backref: biospecimen_supplements
     label: derived_from
-    target_type: case
+    target_type: participant
     multiplicity: many_to_many
     required: true
 
@@ -37,7 +37,7 @@ required:
   - md5sum
   - data_category
   - data_type
-  - cases
+  - participants
 
 uniqueKeys:
   - [ id ]
@@ -63,5 +63,5 @@ properties:
       - XLSX
       - SSF
       - PPS
-  cases:
+  participants:
     $ref: "_definitions.yaml#/to_many"

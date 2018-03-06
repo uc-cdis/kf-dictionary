@@ -25,10 +25,10 @@ links:
   - exclusive: false
     required: true
     subgroup:
-      - name: cases
+      - name: participants
         label: annotates
         backref: annotations
-        target_type: case
+        target_type: participant
         multiplicity: many_to_many
         required: false
       - name: samples
@@ -136,7 +136,7 @@ properties:
   notes:
     type: string
     description: "Open entry for any further description or characterization of the data." # TOREVIEW
-  cases:
+  participants:
     $ref: "_definitions.yaml#/to_many"
   samples:
     $ref: "_definitions.yaml#/to_many"

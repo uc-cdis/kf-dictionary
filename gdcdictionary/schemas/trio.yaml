@@ -7,7 +7,7 @@ category: administrative
 program: '*'
 project: '*'
 description: >
-  The collection of cases that make up a trio for purposes of genomic harmonization.
+  The collection of participants that make up a trio for purposes of genomic harmonization.
 additionalProperties: false
 submittable: true
 validators: null
@@ -27,19 +27,19 @@ links:
     backref: trio_probands
     label: proband_of
     multiplicity: one_to_one
-    target_type: case
+    target_type: participant
     required: true
   - name: father
     backref: trio_fathers
     label: father_of
     multiplicity: many_to_one
-    target_type: case
+    target_type: participant
     required: false
   - name: mother
     backref: trio_mothers
     label: mother_of
     multiplicity: many_to_one
-    target_type: case
+    target_type: participant
     required: false
 
 required:
