@@ -393,6 +393,10 @@ properties:
       - "No"
       - Unknown
       - Not Reported
+  external_id:
+    term:
+      $ref: "_terms.yaml#/external_id"
+    type: string
   initial_weight:
     term:
       $ref: "_terms.yaml#/initial_weight"

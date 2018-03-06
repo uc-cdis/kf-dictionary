@@ -68,7 +68,8 @@ properties:
     description: "Denotes whether participant is proband of study"
     type: boolean
   external_id:
-    description: "Name given to participant by contributor"
+    term:
+      $ref: "_terms.yaml#/external_id"
     type: string
   family_id:
     description: "Id for the participants grouped by family"

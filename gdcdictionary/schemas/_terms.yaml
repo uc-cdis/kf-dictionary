@@ -901,6 +901,10 @@ experimental_strategy: # TOREVIEW
   description: >
     The sequencing strategy used to generate the data file.
 
+external_id:
+  description: >
+    Name given to participant by contributor
+
 fastq_name: # TOREVIEW
   description: >
     Names of FASTQs.
