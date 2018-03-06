@@ -44,6 +44,10 @@ adverse_event:
     cde_version: 1.1
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=3125302&version=1.1"
 
+age_at_event_days:
+  description: >
+    Age at the time of diagnosis expressed.
+
 age_at_diagnosis_days:
   description: >
     Age at the time of diagnosis expressed in number of days since birth.

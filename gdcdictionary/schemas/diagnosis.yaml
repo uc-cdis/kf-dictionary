@@ -22,14 +22,15 @@ systemProperties:
   - updated_datetime
 
 links:
-  - name: cases
+  - name: participants
     backref: diagnoses
     label: describes
-    target_type: case
+    target_type: participant
     multiplicity: many_to_one
     required: true
 
 required:
+  - participants
   - age_at_diagnosis_days
   - primary_diagnosis
   - primary_anatomic_site
@@ -41,27 +42,28 @@ uniqueKeys:
 
 properties:
   $ref_ubiq: "_definitions.yaml#/ubiquitous_properties"
-  
-  age_at_diagnosis_days:
+
+  age_at_event_days:
     term:
-      $ref: "_terms.yaml#/age_at_diagnosis_days"
+      $ref: "_terms.yaml#/age_at_event_days"
     type:
       - integer
       - "null"
     maximum: 32872
     minimum: 0
 
-  primary_anatomic_site:
-    term:
-      $ref: "_terms.yaml#/primary_anatomic_site"
-    type:
-      - string
-    pattern: "^UBERON:[0-9]{7}$"
+  diagnosis_category:
+    description: "High level diagnosis categorization."
+    type: string
+
+  tumor_location:
+    description: "Location of the tumor."
+    type: string
 
   primary_diagnosis:
     term:
       $ref: "_terms.yaml#/primary_diagnosis"
     type: string
 
-  cases:
+  participants:
     $ref: "_definitions.yaml#/to_one"
