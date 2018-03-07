@@ -1,6 +1,6 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "Phenotype"
+id: "phenotype"
 title: Phenotype
 type: object
 category: clinical
