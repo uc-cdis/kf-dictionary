@@ -894,7 +894,7 @@ experiment_strategy: # TOREVIEW
   description: >
     Text term that represents the Library strategy.
 
-experimental_strategy: # TOREVIEW #Duplicated
+experimental_strategy: # TOREVIEW Duplicated
   description: >
     Text term that represents the Library strategy.
 
