@@ -958,6 +958,10 @@ figo_stage:
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=3225684&version=1.0"
 
+file_format: # TOREVIEW
+  description: >
+    Format of file
+
 file_name: # TOREVIEW
   description: >
     The name (or part of a name) of a file (of any type).
@@ -969,6 +973,10 @@ file_size: # TOREVIEW
 file_state: # TOREVIEW
   description: >
     The current state of the data file object.
+
+file_url:
+  description: >
+    Location of file
 
 flow_cell_barcode: # TOREVIEW
   description: >

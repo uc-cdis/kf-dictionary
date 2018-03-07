@@ -66,6 +66,11 @@ file_format:
     term:
         $ref: "_terms.yaml#/file_format"
 
+file_url:
+    type: string
+    term:
+        $ref: "_terms.yaml#/file_url"
+
 md5sum:
     type: string
     term:
@@ -183,6 +188,10 @@ data_file_properties:
     $ref: "#/file_name"
   file_size:
     $ref: "#/file_size"
+  file_format:
+    $ref: "#/file_format"
+  file_url:
+    $ref: "#/file_url"
   md5sum:
     $ref: "#/md5sum" 
   file_state:
