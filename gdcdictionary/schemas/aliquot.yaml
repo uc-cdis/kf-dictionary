@@ -48,9 +48,9 @@ properties:
     term:
       $ref: "_terms.yaml#/aliquot_quantity"
     type: number
-  aliquot_volume:
+  volume:
     term:
-      $ref: "_terms.yaml#/aliquot_volume"
+      $ref: "_terms.yaml#/volume"
     type: number
   amount:
     term:
@@ -74,14 +74,14 @@ properties:
       - Repli-G X (Qiagen) DNA
       - RNA
       - Total RNA
-  analyte_volume:
-    term:
-      $ref: "_terms.yaml#/analyte_volume"
-    type: number
   concentration:
     term:
       $ref: "_terms.yaml#/concentration"
     type: number
+  external_id:
+    term:
+      $ref: "_terms.yaml#/external_id"
+    type: string
   normal_tumor_genotype_snp_match:
     term:
       $ref: "_terms.yaml#/normal_tumor_genotype_snp_match"
