@@ -1902,6 +1902,10 @@ section_location: # TOREVIEW
   description: >
     Tissue source of the slide.
 
+sequencing_center: # TOREVIEW
+  description: >
+    Name of the center that provided the sequence files.
+
 shipment_date: # TOREVIEW
   description: >
     The date item was shipped in YYYY-MM-DD format.
