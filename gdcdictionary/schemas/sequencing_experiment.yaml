@@ -25,7 +25,7 @@ links:
     target_type: aliquot
     multiplicity: many_to_one
     required: true
-    backref: read_groups
+    backref: sequencing_experiments
 
 required:
   - type
