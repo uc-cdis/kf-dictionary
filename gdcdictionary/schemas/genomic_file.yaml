@@ -1,0 +1,62 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "genomic_file"
+title: Genomic File
+type: object
+category: data_file
+program: '*'
+project: '*'
+description: >
+  Data file containing any genomic sequencing data.
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+  - file_state
+  - error_type
+
+links:
+  - name: sequencing_experiments
+    backref: genomic_files
+    label: data_from
+    target_type: sequencing_experiment
+    multiplicity: one_to_many
+    required: true
+
+required:
+  - submitter_id
+  - file_name
+  - file_size
+  - file_format
+  - md5sum
+  - data_type
+  - sequencing_experiments
+
+uniqueKeys:
+  - [ id ]
+  - [ project_id, submitter_id ]
+
+properties:
+  $ref_ubiq: "_definitions.yaml#/ubiquitous_properties"
+  $ref_file: "_definitions.yaml#/data_file_properties"
+  data_type:
+    term:
+      $ref: "_terms.yaml#/data_type"
+    enum:
+      - submitted aligned reads
+      - submitted unaligned reads
+      - simple germline variations
+      - simple somatic variations
+
+  controlled_access:
+    description: "Whether or not the file is controlled access"
+    type: boolean
+
+  sequencing_experiments:
+    $ref: "_definitions.yaml#/to_many"
