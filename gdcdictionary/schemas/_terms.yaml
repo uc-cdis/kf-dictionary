@@ -200,17 +200,6 @@ aliquot_quantity:
     cde_version: null
     term_url: null
 
-aliquot_volume:
-  description: >
-    The volume in microliters (ml) of the aliquot(s) derived from the analyte(s) shipped for
-    sequencing and characterization.
-  termDef:
-    term: Biospecimen Aliquot Volume
-    source: null
-    cde_id: null
-    cde_version: null
-    term_url: null
-
 amount: # TOREVIEW
   description: >
     Weight in grams or volume in mL.
@@ -456,6 +445,10 @@ cea_level_preoperative:
     cde_id: 2716510
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=2716510&version=1.0"
+
+center: # TOREVIEW
+  description: >
+    Text term that represents the sequencing center
 
 cigarettes_per_day:
   description: >
@@ -899,7 +892,7 @@ experiment_name: # TOREVIEW
 
 experimental_strategy: # TOREVIEW
   description: >
-    The sequencing strategy used to generate the data file.
+    Text term that represents the Library strategy.
 
 external_id:
   description: >
@@ -1354,6 +1347,10 @@ m_protein:
     cde_version: 3.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=64561&version=3.0"
 
+max_insert_size:
+  description: >
+    Maximum size of the fragmented DNA
+
 method_of_diagnosis:
   description: >
     The method used to initially the patient's diagnosis.
@@ -1378,6 +1375,19 @@ md5sum: # TOREVIEW
   description: >
     The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital
     fingerprint.
+
+mean_insert_size:
+  description: >
+    Mean size of the fragmented DNA
+
+mean_depth:
+  description: >
+    (Coverage) Describes the amount of sequence data that is available per position in the 
+    sequenced genome territory
+
+mean_read_length:
+  description: >
+    Mean lenth of the reads
 
 microsatellite_instability_abnormal:
   description: >
@@ -1892,10 +1902,6 @@ section_location: # TOREVIEW
   description: >
     Tissue source of the slide.
 
-sequencing_center: # TOREVIEW
-  description: >
-    Name of the center that provided the sequence files.
-
 shipment_date: # TOREVIEW
   description: >
     The date item was shipped in YYYY-MM-DD format.
@@ -2105,6 +2111,10 @@ total_protein:
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=2181536&version=1.0"
 
+total_reads:
+  description: >
+    Total number of reads
+
 total_sequences:
   description: >
     A count of the total number of sequences processed.
@@ -2243,6 +2253,17 @@ vital_status:
     cde_id: 5
     cde_version: 5.0
     term_url: "https://cdebrowser.nci.nih.gov/cdebrowserClient/cdeBrowser.html#/search?publicId=5&version=5.0"
+
+volume:
+  description: >
+    The volume in microliters (ml) of the aliquots derived from the analyte(s) shipped for 
+    sequencing and characterization
+  termDef:
+    term: Biospecimen Aliquot Volume
+    source: null
+    cde_id: null
+    cde_version: null
+    term_url: null
 
 wbc:
   description: >
