@@ -90,7 +90,7 @@ properties:
       - PacBio RS
       - Other
   experiment_strategy:
-    description:
+    terms:
       $ref: "_terms.yaml#/experiment_strategy"
     enum:
       - WGS
