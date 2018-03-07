@@ -890,7 +890,11 @@ experiment_name: # TOREVIEW
   description: >
     Submitter-defined name for the experiment.
 
-experimental_strategy: # TOREVIEW
+experiment_strategy: # TOREVIEW
+  description: >
+    Text term that represents the Library strategy.
+
+experimental_strategy: # TOREVIEW #Duplicated
   description: >
     Text term that represents the Library strategy.
 
