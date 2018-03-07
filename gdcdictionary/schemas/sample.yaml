@@ -26,7 +26,6 @@ systemProperties:
 required:
   - submitter_id
   - composition
-  - tissue_type 
   - participants
 
 uniqueKeys:

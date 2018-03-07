@@ -31,9 +31,8 @@ links:
 
 required:
   - participants
-  - age_at_diagnosis_days
+  - age_at_event_days
   - primary_diagnosis
-  - primary_anatomic_site
 
 uniqueKeys:
   #unclear if want submitter ID for clinical
