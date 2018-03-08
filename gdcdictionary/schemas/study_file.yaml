@@ -42,5 +42,22 @@ properties:
   $ref_ubiq: "_definitions.yaml#/ubiquitous_properties"
   $ref_file: "_definitions.yaml#/data_file_properties"
 
+  data_type:
+    term:
+      $ref: "_terms.yaml#/data_type"
+    enum:
+      - study file
+
+  data_format:
+    term:
+      $ref: "_terms.yaml#/data_format"
+    enum: 
+      - "TXT"
+      - "HTML"
+      - "XML"
+      - "CSV"
+      - "TSV"
+      - "XLSX"
+
   projects:
     $ref: "_definitions.yaml#/to_many"
