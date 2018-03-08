@@ -42,6 +42,12 @@ properties:
   $ref_ubiq: "_definitions.yaml#/ubiquitous_properties"
   $ref_file: "_definitions.yaml#/data_file_properties"
 
+  data_category:
+    term:
+      $ref: "_terms.yaml#/data_category"
+    enum:
+      - Study File
+
   data_type:
     term:
       $ref: "_terms.yaml#/data_type"
