@@ -26,18 +26,17 @@ systemProperties:
 required:
   - submitter_id
   - composition
-  - tissue_type 
-  - cases
+  - participants
 
 uniqueKeys:
   - [id]
   - [project_id, submitter_id]
 
 links:
-  - name: cases
+  - name: participants
     backref: samples
     label: derived_from
-    target_type: case
+    target_type: participant
     multiplicity: many_to_one #not sure
     required: true
   - name: diagnoses
@@ -49,6 +48,15 @@ links:
 
 properties:
   $ref_ubiq: "_definitions.yaml#/ubiquitous_properties"
+
+  age_at_event_days:
+    term:
+      $ref: "_terms.yaml#/age_at_event_days"
+    type:
+      - integer
+      - "null"
+    maximum: 32872
+    minimum: 0
 
   biospecimen_anatomic_site:
     term:
@@ -338,10 +346,12 @@ properties:
     term:
       $ref: "_terms.yaml#/composition"
     enum:
-      - Buccal Cells
-      - Buffy Coat
+      - Blood
       - Bone Marrow Components
       - Bone Marrow Components NOS
+      - Buccal Cells
+      - Buccal Mucosa
+      - Buffy Coat      
       - Control Analyte
       - Cell
       - Derived Cell Line
@@ -382,6 +392,10 @@ properties:
       - "No"
       - Unknown
       - Not Reported
+  external_id:
+    term:
+      $ref: "_terms.yaml#/external_id"
+    type: string
   initial_weight:
     term:
       $ref: "_terms.yaml#/initial_weight"
@@ -500,7 +514,7 @@ properties:
       - Not Reported
     description: "A description of the tumor from which the sample was derived." # TOREVIEW
 
-  cases:
+  participants:
     $ref: "_definitions.yaml#/to_one"
     description: >
       Indicates that the sample is physically derived from the subject

@@ -21,15 +21,15 @@ systemProperties:
   - updated_datetime
 
 links:
-  - name: cases
+  - name: participants
     backref: demographics
     label: describes
-    target_type: case
+    target_type: participant
     multiplicity: one_to_one
     required: true
 
 required:
-  - cases
+  - participants
   - race
   - ethnicity
   - gender
@@ -77,12 +77,12 @@ properties:
     term:
       $ref: "_terms.yaml#/race"
     enum:
-      - white
-      - american indian or alaska native
-      - black or african american
-      - asian
-      - native hawaiian or other pacific islander
-      - other
+      - White
+      - American Indian or Alaska Native
+      - Black or African American
+      - Asian
+      - Native Hawaiian or Other Pacific Islander
+      - Other
       - Unknown
       - not reported
       - not allowed to collect
@@ -93,7 +93,7 @@ properties:
     enum:
       - hispanic or latino
       - not hispanic or latino
-      - Unknown
+      - unknown
       - not reported
       - not allowed to collect
 
@@ -106,5 +106,5 @@ properties:
       - Unknown
       - Not Reported
 
-  cases:
+  participants:
     $ref: "_definitions.yaml#/to_one"

@@ -1,15 +1,13 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "diagnosis"
-title: Diagnosis
+id: "phenotype"
+title: Phenotype
 type: object
 category: clinical
 program: '*'
 project: '*'
 description: >
-  Data from the investigation, analysis and recognition of the presence and nature of disease,
-  condition, or injury from expressed signs and symptoms; also, the scientific determination of any
-  kind; the concise results of such an investigation.
+  Phenotype entity to describe the phenotype name given by contributor.
 additionalProperties: false
 submittable: true
 validators: null
@@ -23,7 +21,7 @@ systemProperties:
 
 links:
   - name: participants
-    backref: diagnoses
+    backref: phenotypes
     label: describes
     target_type: participant
     multiplicity: many_to_one
@@ -31,7 +29,9 @@ links:
 
 required:
   - participants
-  - type
+  - phenotype
+  - observed
+  - submitter_id
 
 uniqueKeys:
   #unclear if want submitter ID for clinical
@@ -41,27 +41,26 @@ uniqueKeys:
 properties:
   $ref_ubiq: "_definitions.yaml#/ubiquitous_properties"
 
+  hpo_id:
+    description: "Human Phenotype Ontology identifier"
+    type: string
+
+  phenotype:
+    description: "Name given to Phenotype by contributor"
+    type: string
+
+  observed:
+    description: "Whether phenotype is negative or positive"
+    enum: 
+      - positive
+      - negative
+
   age_at_event_days:
     term:
       $ref: "_terms.yaml#/age_at_event_days"
     type:
       - integer
       - "null"
-    maximum: 32872
-    minimum: 0
-
-  diagnosis_category:
-    description: "High level diagnosis categorization."
-    type: string
-
-  tumor_location:
-    description: "Location of the tumor."
-    type: string
-
-  primary_diagnosis:
-    term:
-      $ref: "_terms.yaml#/primary_diagnosis"
-    type: string
 
   participants:
     $ref: "_definitions.yaml#/to_one"

@@ -1,7 +1,7 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "case"
-title: Case
+id: "participant"
+title: Participant
 type: object
 category: administrative
 program: '*'
@@ -22,7 +22,7 @@ systemProperties:
 
 links:
   - name: projects
-    backref: cases
+    backref: participants
     label: member_of
     target_type: project
     multiplicity: many_to_one
@@ -63,6 +63,19 @@ properties:
   primary_site:
     term:
       $ref: "_terms.yaml#/primary_site"
+    type: string
+  is_proband:
+    description: "Denotes whether participant is proband of study"
+    type: boolean
+  external_id:
+    term:
+      $ref: "_terms.yaml#/external_id"
+    type: string
+  family_id:
+    description: "Id for the participants grouped by family"
+    type: string
+  consent_type:
+    description: "Type of the consent participant belongs to"
     type: string
   projects:
     $ref: "_definitions.yaml#/to_one"
