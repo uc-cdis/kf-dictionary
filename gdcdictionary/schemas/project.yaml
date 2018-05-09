@@ -131,6 +131,12 @@ properties:
     default: false
     type: boolean
 
+  availability_type:
+    description: "Is the project open or restricted?"
+    enum:
+      - Open
+      - Restricted
+
   intended_release_date:
     description: Tracks a Project's intended release date.
     type: string
