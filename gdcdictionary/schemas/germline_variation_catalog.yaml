@@ -22,10 +22,10 @@ systemProperties:
   - error_type
 
 links:
-  - name: alignment_workflows
+  - name: germline_mutation_calling_workflows
     backref: germline_variation_catalogs
     label: data_from
-    target_type: alignment_workflow
+    target_type: germline_mutation_calling_workflow
     multiplicity: one_to_one
     required: true
 
@@ -67,5 +67,5 @@ properties:
       - WXS
       - Low Pass WGS
       - Validation
-  alignment_workflows:
+  germline_mutation_calling_workflows:
     $ref: "_definitions.yaml#/to_one"
