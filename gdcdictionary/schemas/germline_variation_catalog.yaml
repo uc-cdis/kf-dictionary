@@ -22,10 +22,10 @@ systemProperties:
   - error_type
 
 links:
-  - name: germline_mutation_calling_workflows
+  - name: alignment_workflows
     backref: germline_variation_catalogs
     label: data_from
-    target_type: germline_mutation_calling_workflow
+    target_type: alignment_workflow
     multiplicity: one_to_one
     required: true
 
@@ -38,7 +38,6 @@ required:
   - data_type
   - data_format
   - experimental_strategy
-  - germline_mutation_calling_workflows
 
 uniqueKeys:
   - [ id ]
