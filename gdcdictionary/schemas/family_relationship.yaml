@@ -21,13 +21,13 @@ systemProperties:
 
 links:
   - name: participants
-    backref: family_relationships
+    backref: participant_relationships
     label: relative_to
     target_type: participant
     multiplicity: one_to_one
     required: true
   - name: relatives
-    backref: family_relationships
+    backref: relative_relationships
     label: relative_to
     target_type: participant
     multiplicity: one_to_one
