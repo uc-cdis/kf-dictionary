@@ -28,6 +28,12 @@ links:
     target_type: sequencing_experiment
     multiplicity: one_to_many
     required: true
+  - name: aliquots
+    backref: genomic_files
+    label: data_from
+    target_type: aliquot
+    multiplicity: one_to_many
+    required: false
 
 required:
   - submitter_id
@@ -62,10 +68,15 @@ properties:
     term:
       $ref: "_terms.yaml#/data_type"
     enum:
-      - submitted aligned reads
-      - submitted unaligned reads
-      - simple germline variations
-      - simple somatic variations
+      - Aligned Reads
+      - Aligned Reads Index
+      - Unaligned Reads'
+      - Simple Nucleotide Variation',
+      - Variant Calls
+      - Variant Calls Index
+      - gVCF
+      - gVCF Index
+      - Other
 
   data_format:
     term:
@@ -94,4 +105,7 @@ properties:
     type: string
 
   sequencing_experiments:
+    $ref: "_definitions.yaml#/to_many"
+
+  aliquots:
     $ref: "_definitions.yaml#/to_many"
