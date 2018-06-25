@@ -132,6 +132,18 @@ properties:
     default: false
     type: boolean
 
+  release_status:
+    description: "Release status of the study."
+    enum:
+      - Pending
+      - Waiting
+      - Running
+      - Staged
+      - Publishing
+      - Published
+      - Failed
+      - Canceled
+
   availability_type:
     description: "Is the project open or restricted?"
     enum:
