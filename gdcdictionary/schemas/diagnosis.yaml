@@ -28,12 +28,6 @@ links:
     target_type: participant
     multiplicity: many_to_one
     required: true
-  - name: samples
-    backref: diagnoses
-    label: describes
-    target_type: sample
-    multiplicity: many_to_one
-    required: false
 
 required:
   - participants
@@ -113,7 +107,4 @@ properties:
     type: string
 
   participants:
-    $ref: "_definitions.yaml#/to_one"
-
-  samples:
     $ref: "_definitions.yaml#/to_one"
