@@ -28,6 +28,12 @@ links:
     target_type: participant
     multiplicity: many_to_one
     required: true
+  - name: samples
+    backref: diagnoses
+    label: describes
+    target_type: sample
+    multiplicity: many_to_one
+    required: false
 
 required:
   - participants
@@ -52,7 +58,10 @@ properties:
 
   diagnosis_category:
     description: "High level diagnosis categorization."
-    type: string
+    enum: 
+      - Structural Birth Defect
+      - Cancer
+      - Other
 
   tumor_location:
     description: "Location of the tumor."
@@ -63,5 +72,48 @@ properties:
       $ref: "_terms.yaml#/primary_diagnosis"
     type: string
 
+  external_id:
+    description: "external id used by contributor"
+    type: string
+
+  source_text_diagnosis:
+    description: "Pathological diagnosis"
+    type: string
+
+  source_text_tumor_location:
+    description: "Location of the tumor"
+    type: string
+
+  mondo_id_diagnosis:
+    description: |
+      The ID of the term from the Monary Disease Ontology 
+      which represents a harmonized diagnosis
+    type: string
+
+  icd_id_diagnosis:
+    description: |
+      The ID of the term from the International Classification of Diseases 
+      which represents harmonized diagnosis
+    type: string
+
+  uberon_id_tumor_location:
+    term:
+      $ref: "_terms.yaml#/age_at_event_days"
+    type: string
+
+  ncit_id_diagnosis:
+    description: |
+      The ID term from the National Cancer Institute Thesaurus which represents a 
+      harmonized diagnosis
+    type: string
+
+  spatial_descriptor:
+    description: |
+      Ontology term that harmonizes the spatial concepts from Biological Spatial Ontology
+    type: string
+
   participants:
+    $ref: "_definitions.yaml#/to_one"
+
+  samples:
     $ref: "_definitions.yaml#/to_one"
