@@ -21,16 +21,10 @@ systemProperties:
 
 links:
   - name: participants
-    backref: participant_relationships
+    backref: family_relationships
     label: relative_to
     target_type: participant
-    multiplicity: one_to_one
-    required: true
-  - name: relatives
-    backref: relative_relationships
-    label: relative_to
-    target_type: participant
-    multiplicity: one_to_one
+    multiplicity: many_to_many
     required: true
 
 required:
@@ -53,7 +47,4 @@ properties:
     description: "Text describing the nature of the relationship (i.e. father, mother, sister, brother)"
 
   participants:
-    $ref: "_definitions.yaml#/to_one"
-
-  relatives:
     $ref: "_definitions.yaml#/to_one"
