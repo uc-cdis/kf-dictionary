@@ -21,7 +21,7 @@ systemProperties:
 
 links:
   - name: participants
-    backref: diagnoses
+    backref: outcomes
     label: describes
     target_type: participant
     multiplicity: many_to_one
