@@ -27,6 +27,12 @@ links:
     target_type: project
     multiplicity: many_to_one
     required: true
+  - name: families
+    backref: participants
+    label: member_of
+    target_type: family
+    multiplicity: many_to_one
+    required: false
 
 required:
   - submitter_id
@@ -79,3 +85,5 @@ properties:
     type: string
   projects:
     $ref: "_definitions.yaml#/to_one"
+  families:
+    $ref: "_definitions.yaml#/to_one"    
