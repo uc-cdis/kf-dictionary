@@ -60,8 +60,8 @@ properties:
   observed:
     description: "Whether phenotype is negative or positive"
     enum: 
-      - positive
-      - negative
+      - Positive
+      - Negative
 
   age_at_event_days:
     term:
