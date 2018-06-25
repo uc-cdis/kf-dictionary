@@ -24,7 +24,13 @@ links:
     backref: family_relationships
     label: relative_to
     target_type: participant
-    multiplicity: many_to_many
+    multiplicity: one_to_one
+    required: true
+  - name: relatives
+    backref: family_relationships
+    label: relative_to
+    target_type: participant
+    multiplicity: one_to_one
     required: true
 
 required:
@@ -39,9 +45,15 @@ uniqueKeys:
 properties:
   $ref_ubiq: "_definitions.yaml#/ubiquitous_properties"
 
-  relationship_type:
+  relative_to_participant_relation:
     description: "Text describing the nature of the relationship (i.e. father, mother, sister, brother)"
     type: string
 
+  participant_to_relative_relation:
+    description: "Text describing the nature of the relationship (i.e. father, mother, sister, brother)"
+
   participants:
-    $ref: "_definitions.yaml#/to_many"
+    $ref: "_definitions.yaml#/to_one"
+
+  relatives:
+    $ref: "_definitions.yaml#/to_one"
