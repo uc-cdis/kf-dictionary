@@ -46,6 +46,12 @@ properties:
   $ref_ubiq: "_definitions.yaml#/ubiquitous_properties"
   $ref_file: "_definitions.yaml#/data_file_properties"
 
+  availability: 
+    description: |
+      Indicates whether a file is available for immediate download, 
+      or is in cold storage'
+    type: string
+
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"
@@ -68,10 +74,24 @@ properties:
       - "BAM"
       - "CRAM"
       - "HGV.BAM"
+      - "gVCF"
+
+  external_id:
+    term:
+      $ref: "_terms.yaml#/external_id"
+    type: string
 
   controlled_access:
     description: "Whether or not the file is controlled access"
     type: boolean
+
+  is_harmonized:
+    description: "Whether or not the file is harmonized"
+    type: boolean
+
+  reference_genome:
+    description: "Original reference genome of the unharmonized genomic files"
+    type: string
 
   sequencing_experiments:
     $ref: "_definitions.yaml#/to_many"
