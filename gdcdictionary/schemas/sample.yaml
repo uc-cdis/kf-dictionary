@@ -514,6 +514,29 @@ properties:
       - Not Reported
     description: "A description of the tumor from which the sample was derived." # TOREVIEW
 
+  uberon_id_anatomical_site:
+    term:
+      $ref: "_terms.yaml#/primary_anatomic_site"
+    type: string
+
+  ncit_id_tissue_type:
+    description: |
+      The ID term from the National Cancer Institute Thesaurus 
+      which represents a harmonized tissue type
+    type: string
+
+  ncit_id_anatomical_site:
+    description: |
+      The ID term from the National Cancer Institute Thesaurus 
+      which represents a harmonized anatomical site
+    type: string
+
+  spatial_descriptor:
+    description: |
+      Ontology term that harmonizes the spatial concepts 
+      from Biological Spatial Ontology
+    type: string
+
   participants:
     $ref: "_definitions.yaml#/to_one"
     description: >

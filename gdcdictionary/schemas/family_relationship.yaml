@@ -39,9 +39,12 @@ uniqueKeys:
 properties:
   $ref_ubiq: "_definitions.yaml#/ubiquitous_properties"
 
-  relationship_type:
+  relative_to_participant_relation:
     description: "Text describing the nature of the relationship (i.e. father, mother, sister, brother)"
     type: string
 
+  participant_to_relative_relation:
+    description: "Text describing the nature of the relationship (i.e. father, mother, sister, brother)"
+
   participants:
-    $ref: "_definitions.yaml#/to_many"
+    $ref: "_definitions.yaml#/to_one"
