@@ -22,15 +22,18 @@ systemProperties:
   - error_type
 
 links:
-  - exclusive: true
-    required: true
-    subgroup:
-      - name: alignment_workflows
-        backref: aligned_reads_files
-        label: data_from
-        target_type: alignment_workflow
-        multiplicity: many_to_one
-        required: false
+  - name: alignment_workflows
+    backref: aligned_reads_files
+    label: data_from
+    target_type: alignment_workflow
+    multiplicity: many_to_one
+    required: false
+  - name: read_groups
+    backref: aligned_reads_files
+    label: data_from
+    target_type: read_group
+    multiplicity: many_to_one
+    required: false
   - exclusive: true
     required: false
     subgroup:
