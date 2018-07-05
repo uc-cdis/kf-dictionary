@@ -29,7 +29,7 @@ links:
 
 required:
   - submitter_id
-  - participants
+  - projects
 
 uniqueKeys:
   - [id]
