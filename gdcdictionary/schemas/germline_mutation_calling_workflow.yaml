@@ -30,10 +30,10 @@ links:
         target_type: aligned_reads
         multiplicity: many_to_many
         required: false
-      - name: germline_variation_catalogs
+      - name: simple_germline_variations
         backref: germline_mutation_calling_workflows
         label: performed_on
-        target_type: germline_variation_catalog
+        target_type: simple_germline_variation
         multiplicity: many_to_many
         required: false
 
@@ -57,5 +57,5 @@ properties:
       - FreeBayes
   aligned_reads_files:
     $ref: "_definitions.yaml#/to_many"
-  germline_variation_catalogs:
+  simple_germline_variations:
     $ref: "_definitions.yaml#/to_many"
