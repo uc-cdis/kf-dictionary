@@ -62,6 +62,9 @@ properties:
     enum: 
       - Positive
       - Negative
+      - Not Reported
+      - Not Applicable
+      - Reported Unknown
 
   age_at_event_days:
     term:
