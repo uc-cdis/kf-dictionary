@@ -24,16 +24,16 @@ links:
   - exclusive: true
     required: true
     subgroup:
+      - name: submitted_aligned_reads_files
+        backref: germline_mutation_calling_workflows
+        label: performed_on
+        target_type: submitted_aligned_reads
+        multiplicity: many_to_many
+        required: false
       - name: aligned_reads_files
         backref: germline_mutation_calling_workflows
         label: performed_on
         target_type: aligned_reads
-        multiplicity: many_to_many
-        required: false
-      - name: simple_germline_variations
-        backref: germline_mutation_calling_workflows
-        label: performed_on
-        target_type: simple_germline_variation
         multiplicity: many_to_many
         required: false
 
@@ -57,5 +57,5 @@ properties:
       - FreeBayes
   aligned_reads_files:
     $ref: "_definitions.yaml#/to_many"
-  simple_germline_variations:
+  submitted_aligned_reads_files:
     $ref: "_definitions.yaml#/to_many"
