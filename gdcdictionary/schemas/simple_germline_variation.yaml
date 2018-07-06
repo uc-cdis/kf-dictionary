@@ -22,18 +22,26 @@ systemProperties:
   - error_type
 
 links:
-  - name: germline_mutation_calling_workflows
-    backref: simple_germline_variations
-    label: data_from
-    target_type: germline_mutation_calling_workflow
-    multiplicity: many_to_one
+  - exclusive: true
     required: true
+    subgroup:
+      - name: germline_mutation_calling_workflows
+        backref: simple_germline_variations
+        label: data_from
+        target_type: germline_mutation_calling_workflow
+        multiplicity: many_to_one
+        required: false
+      - name: read_groups
+        backref: simple_germline_variations
+        label: data_from
+        target_type: read_group
+        multiplicity: one_to_many
+        required: true
 
 required:
   - submitter_id
   - file_name
   - file_size
-  - md5sum
   - data_category
   - data_type
   - data_format
@@ -58,7 +66,9 @@ properties:
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
-    enum: [ "VCF" ]
+    enum:
+      - gVCF
+      - VCF    
   experimental_strategy:
     term:
       $ref: "_terms.yaml#/experimental_strategy"
@@ -69,3 +79,5 @@ properties:
       - Validation
   germline_mutation_calling_workflows:
     $ref: "_definitions.yaml#/to_one"
+  read_groups:
+    $ref: "_definitions.yaml#/to_many"
