@@ -23,7 +23,7 @@ systemProperties:
 
 links:
   - exclusive: true
-    required: true
+    required: false
     subgroup:
       - name: germline_mutation_calling_workflows
         backref: simple_germline_variations
