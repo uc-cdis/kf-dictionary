@@ -74,6 +74,8 @@ properties:
       - Repli-G X (Qiagen) DNA
       - RNA
       - Total RNA
+      - Other
+      - Not Reported
   concentration:
     term:
       $ref: "_terms.yaml#/concentration"
