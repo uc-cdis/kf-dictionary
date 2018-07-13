@@ -52,11 +52,13 @@ properties:
     description: |
       Whether Dead and cause of death was disease related (Yes) 
       or Dead and cause of death was not disease related (No) 
-      or Not Reported"
+      or Not Reported
     enum: 
       - Yes
       - No
       - Not Reported
+      - Reported Unknown
+      - Not Applicable
 
   vital_status:
     term:
