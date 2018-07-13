@@ -69,10 +69,12 @@ properties:
       - AB SOLiD 2
       - AB SOLiD 3
       - Complete Genomics
+      - Illumina HiSeq
       - Illumina HiSeq X Ten
       - Illumina HiSeq X Five
       - Illumina Genome Analyzer II
       - Illumina Genome Analyzer IIx
+      - Illumina HiSeq
       - Illumina HiSeq 2000
       - Illumina HiSeq 2500
       - Illumina HiSeq 4000
