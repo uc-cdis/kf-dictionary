@@ -196,6 +196,7 @@ properties:
       - Unstranded
       - First_Stranded
       - Second_Stranded
+      - Other
   base_caller_name:
     term:
       $ref: "_terms.yaml#/base_caller_name"
