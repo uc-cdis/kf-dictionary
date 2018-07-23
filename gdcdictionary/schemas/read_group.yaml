@@ -69,6 +69,7 @@ properties:
       - AB SOLiD 2
       - AB SOLiD 3
       - Complete Genomics
+      - Illumina HiSeq
       - Illumina HiSeq X Ten
       - Illumina HiSeq X Five
       - Illumina Genome Analyzer II
@@ -196,6 +197,7 @@ properties:
       - Unstranded
       - First_Stranded
       - Second_Stranded
+      - Other
   base_caller_name:
     term:
       $ref: "_terms.yaml#/base_caller_name"
