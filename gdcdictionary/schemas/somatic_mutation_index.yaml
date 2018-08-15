@@ -6,7 +6,7 @@ type: object
 category: index_file
 program: '*'
 project: '*'
-description: "Data file containing the index for a set of aligned reads."
+description: "Data file containing the index for a set of somatic variants."
 additionalProperties: false
 submittable: true
 validators: null
