@@ -54,8 +54,8 @@ properties:
       or Dead and cause of death was not disease related (No) 
       or Not Reported
     enum: 
-      - Yes
-      - No
+      - "Yes"
+      - "No"
       - Not Reported
       - Reported Unknown
       - Not Applicable
