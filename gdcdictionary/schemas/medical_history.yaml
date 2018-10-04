@@ -58,6 +58,7 @@ properties:
     enum:
       - "Positive"
       - "Negative"
+      - "Reported Unknown"
       - "Not Reported"
       - "Not Applicable"
 
@@ -67,6 +68,7 @@ properties:
     enum:
       - "Positive"
       - "Negative"
+      - "Reported Unknown"
       - "Not Reported"
       - "Not Applicable"
 
@@ -76,6 +78,7 @@ properties:
     enum:
       - "Positive"
       - "Negative"
+      - "Reported Unknown"
       - "Not Reported"
       - "Not Applicable"
 
