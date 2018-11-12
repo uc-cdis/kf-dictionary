@@ -23,7 +23,7 @@ systemProperties:
 
 links:
   - exclusive: true
-    required: false
+    required: true
     subgroup:
       - name: germline_mutation_calling_workflows
         backref: simple_germline_variations
@@ -73,7 +73,7 @@ properties:
       $ref: "_terms.yaml#/data_format"
     enum:
       - gVCF
-      - VCF    
+      - VCF
   experimental_strategy:
     term:
       $ref: "_terms.yaml#/experimental_strategy"
