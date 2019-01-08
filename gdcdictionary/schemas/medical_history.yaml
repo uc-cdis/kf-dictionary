@@ -3,7 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "medical_history"
 title: Medical History
 type: object
-namespace: http://dcp.bionimbus.org/
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: clinical
 program: '*'
 project: '*'

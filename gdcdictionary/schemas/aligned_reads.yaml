@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "aligned_reads"
 title: Aligned Reads
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: data_file
 program: '*'
 project: '*'
@@ -22,21 +23,15 @@ systemProperties:
   - error_type
 
 links:
-  - name: alignment_workflows
-    backref: aligned_reads_files
-    label: data_from
-    target_type: alignment_workflow
-    multiplicity: many_to_one
-    required: false
-  - name: read_groups
-    backref: aligned_reads_files
-    label: data_from
-    target_type: read_group
-    multiplicity: many_to_one
-    required: false
-  - exclusive: true
+  - exclusive: false
     required: true
     subgroup:
+      - name: core_metadata_collections
+        backref: aligned_reads_files
+        label: data_from
+        target_type: core_metadata_collection
+        multiplicity: many_to_one
+        required: false
       - name: submitted_unaligned_reads_files
         backref: aligned_reads_files
         label: matched_to
@@ -48,6 +43,18 @@ links:
         label: matched_to
         target_type: submitted_aligned_reads
         multiplicity: one_to_one
+        required: false
+      - name: alignment_workflows
+        backref: aligned_reads_files
+        label: data_from
+        target_type: alignment_workflow
+        multiplicity: many_to_one
+        required: false
+      - name: read_groups
+        backref: aligned_reads_files
+        label: data_from
+        target_type: read_group
+        multiplicity: many_to_one
         required: false
 
 required:
@@ -65,6 +72,7 @@ uniqueKeys:
 properties:
   $ref_ubiq: "_definitions.yaml#/ubiquitous_properties"
   $ref_file: "_definitions.yaml#/data_file_properties"
+
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"
@@ -72,16 +80,19 @@ properties:
       - Sequencing Data
       - Sequencing Reads
       - Raw Sequencing Data
+
+  data_format:
+    term:
+      $ref: "_terms.yaml#/data_format"
+    enum:
+      - BAM
+      - CRAM
+
   data_type:
     term:
       $ref: "_terms.yaml#/data_type"
     enum: [ "Aligned Reads" ]
-  data_format:
-    term:
-      $ref: "_terms.yaml#/data_format"
-    enum: 
-      - BAM
-      - CRAM
+
   experimental_strategy:
     term:
       $ref: "_terms.yaml#/experimental_strategy"
@@ -93,13 +104,17 @@ properties:
       - RNA-Seq
       - miRNA-Seq
       - Total RNA-Seq
+
   platform:
     $ref: "read_group.yaml#/properties/platform"
+
   alignment_workflows:
     $ref: "_definitions.yaml#/to_one"
   read_groups:
-    $ref: "_definitions.yaml#/to_one"    
+    $ref: "_definitions.yaml#/to_one"
   submitted_unaligned_reads_files:
     $ref: "_definitions.yaml#/to_many"
   submitted_aligned_reads_files:
     $ref: "_definitions.yaml#/to_one"
+  core_metadata_collections:
+    $ref: "_definitions.yaml#/to_many"

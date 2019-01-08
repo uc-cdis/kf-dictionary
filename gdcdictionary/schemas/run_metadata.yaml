@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "run_metadata"
 title: Run Metadata
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: metadata_file
 project: '*'
 program: '*'

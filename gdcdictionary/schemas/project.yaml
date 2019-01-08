@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "project"
 title: Project
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 program: '*'
 project: '*'
 category: administrative
@@ -57,7 +58,7 @@ properties:
     description: "Display name or title for the project" # TOREVIEW
   data_access_authority:
     type: string
-    description: "Name of organization which governs data access" # TOREVIEW  
+    description: "Name of organization which governs data access" # TOREVIEW
   dbgap_accession_number:
     type: string
     description: "The dbgap accession number for the project." # TOREVIEW

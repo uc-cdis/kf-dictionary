@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "investigator"
 title: Investigator
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: administrative
 program: '*'
 project: '*'

@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "family_relationship"
 title: Family Relationship
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: clinical
 program: '*'
 project: '*'
