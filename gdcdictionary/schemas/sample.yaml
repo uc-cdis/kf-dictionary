@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "sample"
 title: Sample
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: biospecimen
 program: '*'
 project: '*'
@@ -351,7 +352,7 @@ properties:
       - Bone Marrow Components NOS
       - Buccal Cells
       - Buccal Mucosa
-      - Buffy Coat      
+      - Buffy Coat
       - Control Analyte
       - Cell
       - Derived Cell Line
@@ -521,19 +522,19 @@ properties:
 
   ncit_id_tissue_type:
     description: |
-      The ID term from the National Cancer Institute Thesaurus 
+      The ID term from the National Cancer Institute Thesaurus
       which represents a harmonized tissue type
     type: string
 
   ncit_id_anatomical_site:
     description: |
-      The ID term from the National Cancer Institute Thesaurus 
+      The ID term from the National Cancer Institute Thesaurus
       which represents a harmonized anatomical site
     type: string
 
   spatial_descriptor:
     description: |
-      Ontology term that harmonizes the spatial concepts 
+      Ontology term that harmonizes the spatial concepts
       from Biological Spatial Ontology
     type: string
 

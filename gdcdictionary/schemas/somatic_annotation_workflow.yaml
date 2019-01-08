@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "somatic_annotation_workflow"
 title: Somatic Annotation Workflow
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: analysis
 program: '*'
 project: '*'

@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "aligned_reads_index"
 title: Aligned Reads Index
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: index_file
 program: '*'
 project: '*'
@@ -66,7 +67,7 @@ properties:
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
-    enum: 
+    enum:
       - BAI
       - CRAI
   submitted_aligned_reads_files:

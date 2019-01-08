@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "slide_image"
 title: Slide Image
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: data_file
 program: '*'
 project: '*'
@@ -22,12 +23,21 @@ systemProperties:
   - error_type
 
 links:
-  - name: slides
-    backref: slide_images
-    label: data_from
-    target_type: slide
-    multiplicity: one_to_one
+  - exclusive: false
     required: true
+    subgroup:
+      - name: core_metadata_collections
+        backref: slide_images
+        label: data_from
+        target_type: core_metadata_collection
+        multiplicity: many_to_one
+        required: false
+      - name: slides
+        backref: slide_images
+        label: data_from
+        target_type: slide
+        multiplicity: one_to_one
+        required: false
 
 required:
   - submitter_id
@@ -38,7 +48,6 @@ required:
   - data_type
   - data_format
   - experimental_strategy
-  - slides
 
 uniqueKeys:
   - [ id ]
@@ -47,23 +56,30 @@ uniqueKeys:
 properties:
   $ref_ubiq: "_definitions.yaml#/ubiquitous_properties"
   $ref_file: "_definitions.yaml#/data_file_properties"
+
   data_category:
     term:
       $ref: "_terms.yaml#/data_category"
     enum: [ "Biospecimen" ]
-  data_type:
-    term:
-      $ref: "_terms.yaml#/data_type"
-    enum: [ "Slide Image" ]
+
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
     enum:
       - SVS
+
+  data_type:
+    term:
+      $ref: "_terms.yaml#/data_type"
+    enum: [ "Slide Image" ]
+
   experimental_strategy:
     description: "Classification of the slide type with respect to its experimental use."
     enum:
       - Diagnostic Slide
       - Tissue Slide
+
   slides:
     $ref: "_definitions.yaml#/to_one"
+  core_metadata_collections:
+    $ref: "_definitions.yaml#/to_many"

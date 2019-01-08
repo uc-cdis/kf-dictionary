@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "germline_variation_index"
 title: Germline Variation Index
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: index_file
 program: '*'
 project: '*'
@@ -21,7 +22,7 @@ systemProperties:
   - error_type
 
 links:
-  - name: simple_germline_variations 
+  - name: simple_germline_variations
     backref: germline_variation_indexes
     label: derived_from
     target_type: simple_germline_variation
@@ -48,7 +49,7 @@ properties:
     term:
       $ref: "_terms.yaml#/data_category"
     enum:
-      - Simple Nucleotide Variation 
+      - Simple Nucleotide Variation
   data_type:
     term:
       $ref: "_terms.yaml#/data_type"
@@ -57,7 +58,7 @@ properties:
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
-    enum: 
-      - TBI 
+    enum:
+      - TBI
   simple_germline_variations:
     $ref: "_definitions.yaml#/to_one"

@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "diagnosis"
 title: Diagnosis
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: clinical
 program: '*'
 project: '*'
@@ -52,7 +53,7 @@ properties:
 
   diagnosis_category:
     description: "High level diagnosis categorization."
-    enum: 
+    enum:
       - Structural Birth Defect
       - Cancer
       - Other
@@ -80,13 +81,13 @@ properties:
 
   mondo_id_diagnosis:
     description: |
-      The ID of the term from the Monary Disease Ontology 
+      The ID of the term from the Monary Disease Ontology
       which represents a harmonized diagnosis
     type: string
 
   icd_id_diagnosis:
     description: |
-      The ID of the term from the International Classification of Diseases 
+      The ID of the term from the International Classification of Diseases
       which represents harmonized diagnosis
     type: string
 
@@ -97,7 +98,7 @@ properties:
 
   ncit_id_diagnosis:
     description: |
-      The ID term from the National Cancer Institute Thesaurus which represents a 
+      The ID term from the National Cancer Institute Thesaurus which represents a
       harmonized diagnosis
     type: string
 

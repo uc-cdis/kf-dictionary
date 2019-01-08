@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "study_file"
 title: Study File
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: data_file
 program: '*'
 project: '*'
@@ -22,17 +23,25 @@ systemProperties:
   - error_type
 
 links:
-  - name: projects
-    backref: study_files
-    label: data_from
-    target_type: project
-    multiplicity: many_to_one
+  - exclusive: false
     required: true
+    subgroup:
+      - name: core_metadata_collections
+        backref: study_files
+        label: data_from
+        target_type: core_metadata_collection
+        multiplicity: many_to_one
+        required: false
+      - name: projects
+        backref: study_files
+        label: data_from
+        target_type: project
+        multiplicity: many_to_one
+        required: false
 
 required:
   - submitter_id
   - file_name
-  - projects
 
 uniqueKeys:
   - [ id ]
@@ -48,16 +57,10 @@ properties:
     enum:
       - Study File
 
-  data_type:
-    term:
-      $ref: "_terms.yaml#/data_type"
-    enum:
-      - study file
-
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
-    enum: 
+    enum:
       - "TXT"
       - "HTML"
       - "XML"
@@ -65,5 +68,13 @@ properties:
       - "TSV"
       - "XLSX"
 
+  data_type:
+    term:
+      $ref: "_terms.yaml#/data_type"
+    enum:
+      - study file
+
   projects:
+    $ref: "_definitions.yaml#/to_many"
+  core_metadata_collections:
     $ref: "_definitions.yaml#/to_many"

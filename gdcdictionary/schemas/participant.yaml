@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "participant"
 title: Participant
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: administrative
 program: '*'
 project: '*'
@@ -86,4 +87,4 @@ properties:
   projects:
     $ref: "_definitions.yaml#/to_one"
   families:
-    $ref: "_definitions.yaml#/to_one"    
+    $ref: "_definitions.yaml#/to_one"

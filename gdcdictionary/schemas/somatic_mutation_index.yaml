@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "somatic_mutation_index"
 title: Somatic Mutation Index
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: index_file
 program: '*'
 project: '*'
@@ -24,7 +25,7 @@ links:
   - exclusive: true
     required: true
     subgroup:
-      - name: simple_somatic_mutations 
+      - name: simple_somatic_mutations
         backref: somatic_mutation_indexes
         label: derived_from
         target_type: simple_somatic_mutation
@@ -57,7 +58,7 @@ properties:
     term:
       $ref: "_terms.yaml#/data_category"
     enum:
-      - Simple Nucleotide Variation 
+      - Simple Nucleotide Variation
   data_type:
     term:
       $ref: "_terms.yaml#/data_type"
@@ -66,8 +67,8 @@ properties:
   data_format:
     term:
       $ref: "_terms.yaml#/data_format"
-    enum: 
-      - TBI 
+    enum:
+      - TBI
   simple_somatic_mutations:
     $ref: "_definitions.yaml#/to_one"
   annotated_somatic_mutations:

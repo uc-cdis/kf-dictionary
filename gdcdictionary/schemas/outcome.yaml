@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "outcome"
 title: Outcome
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 category: clinical
 program: '*'
 project: '*'
@@ -50,10 +51,10 @@ properties:
 
   disease_related:
     description: |
-      Whether Dead and cause of death was disease related (Yes) 
-      or Dead and cause of death was not disease related (No) 
+      Whether Dead and cause of death was disease related (Yes)
+      or Dead and cause of death was not disease related (No)
       or Not Reported
-    enum: 
+    enum:
       - "Yes"
       - "No"
       - Not Reported
@@ -63,7 +64,7 @@ properties:
   vital_status:
     term:
       $ref: "_terms.yaml#/age_at_event_days"
-    enum: 
+    enum:
       - Dead
       - Alive
 

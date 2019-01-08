@@ -3,6 +3,7 @@ $schema: "http://json-schema.org/draft-04/schema#"
 id: "read_group"
 title: Read Group
 type: object
+namespace: https://dcf-interop.kidsfirstdrc.org/
 description: "Sequencing reads from one lane of an NGS experiment."
 category: biospecimen
 validators: null
@@ -95,7 +96,7 @@ properties:
       - Bisulfite-Seq
       - Validation
       - Amplicon
-      - Targeted Sequencing 
+      - Targeted Sequencing
       - Other
   RIN:
     term:
