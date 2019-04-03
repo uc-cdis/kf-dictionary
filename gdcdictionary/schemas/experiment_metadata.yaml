@@ -21,6 +21,7 @@ systemProperties:
   - state
   - file_state
   - error_type
+  - type
 
 links:
   - exclusive: false
