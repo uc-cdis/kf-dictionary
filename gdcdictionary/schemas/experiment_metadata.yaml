@@ -74,3 +74,5 @@ properties:
       - SRA XML
   read_groups:
     $ref: "_definitions.yaml#/to_one"
+  core_metadata_collections:
+    $ref: "_definitions.yaml#/to_many"
