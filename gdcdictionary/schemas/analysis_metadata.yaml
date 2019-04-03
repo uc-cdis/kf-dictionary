@@ -23,7 +23,7 @@ systemProperties:
   - error_type
 
 links:
-  - exclusive: true
+  - exclusive: false
     required: true
     subgroup:
       - name: submitted_aligned_reads_files # what about unaligned reads?
@@ -32,7 +32,13 @@ links:
         target_type: submitted_aligned_reads
         multiplicity: one_to_many
         required: false
-
+      - name: core_metadata_collections
+        backref: experiment_metadata_files
+        label: derived_from
+        target_type: core_metadata_collection
+        multiplicity: many_to_one
+        required: false
+      
 required:
   - submitter_id
   - file_name
@@ -70,4 +76,6 @@ properties:
       - IDF
       - ADF
   submitted_aligned_reads_files:
+    $ref: "_definitions.yaml#/to_many"
+  core_metadata_collections:
     $ref: "_definitions.yaml#/to_many"
