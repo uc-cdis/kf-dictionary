@@ -28,6 +28,7 @@ required:
   - submitter_id
   - composition
   - participants
+  - type
 
 uniqueKeys:
   - [id]
