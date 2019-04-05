@@ -85,6 +85,6 @@ properties:
     description: "Type of the consent participant belongs to"
     type: string
   projects:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_one_project"
   families:
     $ref: "_definitions.yaml#/to_one"
