@@ -42,12 +42,10 @@ links:
         label: derived_from
         target_type: core_metadata_collection
         multiplicity: many_to_one
-        required: false
-
-
-      
+        required: false    
 
 required:
+  - type
   - submitter_id
   - file_name
   - file_size
