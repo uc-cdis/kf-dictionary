@@ -29,6 +29,7 @@ links:
     required: true
 
 required:
+  - type
   - participants
   - phenotype
   - observed
