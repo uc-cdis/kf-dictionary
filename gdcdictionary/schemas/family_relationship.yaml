@@ -29,6 +29,7 @@ links:
     required: true
 
 required:
+  - type
   - submitter_id
   - participants
 
