@@ -36,6 +36,7 @@ links:
     required: false
 
 required:
+  - type
   - submitter_id
   - projects
 
@@ -85,6 +86,6 @@ properties:
     description: "Type of the consent participant belongs to"
     type: string
   projects:
-    $ref: "_definitions.yaml#/to_one_project"
+    $ref: "_definitions.yaml#/to_one"
   families:
     $ref: "_definitions.yaml#/to_one"
