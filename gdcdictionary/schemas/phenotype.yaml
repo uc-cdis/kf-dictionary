@@ -54,7 +54,7 @@ properties:
       The ID of the term from Systematized Nomenclature of Medicine - Clinical Terms
       which encodes clinical terminology
     type: string
-      
+
   phenotype:
     description: "Name given to Phenotype by contributor"
     enum:
@@ -127,7 +127,6 @@ properties:
       - "atresia of left external ear"
       - "atresia of the large intestine"
       - "atrial septal defect"
-      - "atrial septal defect"
       - "atrophic pituitary gland"
       - "belpharoptosis"
       - "bicornuate uterus"
@@ -162,7 +161,6 @@ properties:
       - "cerebellar glioma"
       - "cerebellar hypoplasia"
       - "cerebellar vermis hypoplasia"
-      - "cerebral atrophy"
       - "cerebral atrophy"
       - "cerebral hypoplasia"
       - "cervical instability"
@@ -201,7 +199,6 @@ properties:
       - "cutis aplasia"
       - "cystic hygroma"
       - "cystic or polycystic kidney"
-      - "dandy-walker malformation"
       - "dandy-walker malformation"
       - "decrease vit k and factor xii deficiency"
       - "decreased thenar eminence"
@@ -264,7 +261,6 @@ properties:
       - "hand syndactyly"
       - "hearing impairment"
       - "hearing loss"
-      - "hemangioma"
       - "hemangioma"
       - "hemi-vertebrae"
       - "hemiplegic cerebral palsy; abnormal gait"
@@ -404,7 +400,6 @@ properties:
       - "patent foramen ovale"
       - "pectus carinatum"
       - "pectus excavatum"
-      - "pectus excavatum"
       - "pelvic kidney"
       - "pelviectasis"
       - "periauricular skin tag"
@@ -418,7 +413,6 @@ properties:
       - "plagiocephaly, triangular shaped in coronal plane"
       - "pointy"
       - "pointy superiorly"
-      - "polymicrogyria"
       - "polymicrogyria"
       - "polysplenia"
       - "port wine stain"
@@ -522,7 +516,6 @@ properties:
       - "tarsal coalition"
       - "telangiectasia"
       - "tethered cord malformation sequence"
-      - "tetralogy of fallot"
       - "tetralogy of fallot"
       - "thick helices"
       - "thickened rib, mild scoliosis, difuse osteopenia"
