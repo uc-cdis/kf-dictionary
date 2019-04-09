@@ -40,6 +40,7 @@ links:
         required: false
 
 required:
+  - type
   - submitter_id
   - file_name
 
@@ -75,6 +76,6 @@ properties:
       - study file
 
   projects:
-    $ref: "_definitions.yaml#/to_many"
+    $ref: "_definitions.yaml#/to_many_project"
   core_metadata_collections:
     $ref: "_definitions.yaml#/to_many"

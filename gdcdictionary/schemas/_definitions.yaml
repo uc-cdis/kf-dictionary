@@ -43,6 +43,36 @@ to_many:
         minItems: 1
     - $ref: "#/foreign_key"
 
+foreign_key_project:
+    type: object
+    # Allow true here because we can have other unique keys defined on
+    # a target type
+    additionalProperties: true
+    #Can either use 'id' which are Gen3 IDs (UUID) or 'code'
+    #which is the user defined ID for project
+    properties:
+        id:
+            $ref: "#/UUID"
+        code:
+            type: string
+
+to_one_project:
+  anyOf:
+    - type: array
+      items:
+        $ref: "#/foreign_key_project"
+        minItems: 1
+        maxItems: 1
+    - $ref: "#/foreign_key_project"
+
+to_many_project:
+  anyOf:
+    - type: array
+      items:
+        $ref: "#/foreign_key_project"
+        minItems: 1
+    - $ref: "#/foreign_key_project"
+
 datetime:
   oneOf:
     - type: string
@@ -58,7 +88,7 @@ file_name:
 
 file_size:
     type: integer
-    term: 
+    term:
         $ref: "_terms.yaml#/file_size"
 
 file_format:
@@ -109,7 +139,7 @@ data_file_error_type:
 
 state:
     term:
-        $ref: "_terms.yaml#/state" 
+        $ref: "_terms.yaml#/state"
     default: validated
     downloadable:
         - uploaded
@@ -140,7 +170,7 @@ state:
 
 file_state:
     term:
-        $ref: "_terms.yaml#/file_state" 
+        $ref: "_terms.yaml#/file_state"
     default: registered
     enum:
         - registered
@@ -187,7 +217,7 @@ ubiquitous_properties: #All entities except for program and project
   type:
     type: string
 
-data_file_properties: 
+data_file_properties:
   file_name:
     $ref: "#/file_name"
   file_size:
@@ -199,17 +229,17 @@ data_file_properties:
   md5sum:
     $ref: "#/md5sum"
   object_id:
-    $ref: "#/object_id"      
+    $ref: "#/object_id"
   file_state:
     $ref: "#/file_state"
   error_type:
     $ref: "#/data_file_error_type"
   state_comment:
     type: string
-    description: > 
+    description: >
       Optional comment about why the file is in the
       current state, mainly for invalid state.
-  
+
 
 workflow_properties:
   workflow_link:

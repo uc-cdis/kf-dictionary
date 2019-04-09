@@ -29,6 +29,7 @@ links:
     required: true
 
 required:
+  - type
   - participants
   - phenotype
   - observed
@@ -53,512 +54,504 @@ properties:
       The ID of the term from Systematized Nomenclature of Medicine - Clinical Terms
       which encodes clinical terminology
     type: string
-      
+
   phenotype:
     description: "Name given to Phenotype by contributor"
     enum:
-      - 2 vessel cord
-      - 2 vessel umbilical cord
-      - 3 cm. liver
-      - 3 facial skin tags
-      - 3 fontanelles
-      - abnormal abdominal situs
-      - abnormal aorta
-      - abnormal aortic valve
-      - abnormal atrial septum
-      - abnormal atrioventricular connection
-      - abnormal cardiac situs
-      - abnormal carotid artery morphology
-      - abnormal cerebellum morphology
-      - abnormal cervical and thoracic bodies
-      - abnormal coronary artery
-      - abnormal fetal calvarium
-      - abnormal fingers but not thumb
-      - abnormal hepatic vein
-      - abnormal left atrium
-      - abnormal left ventricle
-      - abnormal mitral valve
-      - abnormal pulmonary artery
-      - abnormal pulmonary valve
-      - abnormal pulmonary vein
-      - abnormal right atrium
-      - abnormal right ventricle
-      - abnormal systemic vein
-      - abnormal thumb
-      - abnormal toe
-      - abnormal tricuspid valve
-      - abnormal ventricular septum
-      - abnormal ventriculo-arterial connection
-      - abnormality of dental enamel
-      - abnormality of the cerebral vasculature
-      - abnormality of the optic nerve
-      - abnormality of the sternum
-      - absent corpus callosum
-      - absent or abnormal ear canal
-      - absent radius
-      - absent sacrum and lumbar spine
-      - absent sternal ossification
-      - absent thymus
-      - agenesis of corpus callosum
-      - ambiguous genitalia
-      - amblyopia
-      - anal skin tag
-      - anemia
-      - anemia of prematurity
-      - ankyloglossia
-      - annular pancreas
-      - anophthalmia
-      - anteriorly placed anus
-      - anxiety disorder
-      - aortic aneurysm
-      - aortic root aneurysm
-      - aortic tortuosity
-      - arterial stenosis
-      - arterial tortuosity
-      - ascending tubular aorta aneurysm
-      - asplenia
-      - assymetric crying facies
-      - asthma
-      - asymmetric
-      - asymmetric mouth movement; hypoplastic left jaw
-      - asymmetric sacral cleft, low lying conus terminalis l3
-      - asymmetrical gluteal crease
-      - atresia of left external ear
-      - atresia of the large intestine
-      - atrial septal defect
-      - atrial septal defect
-      - atrophic pituitary gland
-      - belpharoptosis
-      - bicornuate uterus
-      - bicuspid aortic valve
-      - bifid scrotum
-      - bifid sternum
-      - bifid uvula
-      - bilat toes 2-4 syndactyly
-      - bilateral clinodactyly 5th fingers, left hand simian creases
-      - bilateral congenital ossicular anomaly
-      - bilateral glue ear
-      - bilateral left-sidedness
-      - bilateral low vision
-      - bilateral right-sidedness
-      - bile duct paucity
-      - biliary atresia
-      - bitemporal hallowing
-      - bitemporal narrowing
-      - born with retinoblastoma
-      - brachycephaly
-      - branchial cleft cyst
-      - broad big toe
-      - butterfly vertebrae
-      - cafe au lait spots
-      - cataracts
-      - caudal regression syndrome
-      - cecal carcinoma
-      - central hypothyrodism
-      - cephalohematoma, caput succedaneum
-      - cerebellar cyst
-      - cerebellar dysplasia
-      - cerebellar glioma
-      - cerebellar hypoplasia
-      - cerebellar vermis hypoplasia
-      - cerebral atrophy
-      - cerebral atrophy
-      - cerebral hypoplasia
-      - cervical instability
-      - chiari malformation
-      - choanal atresia
-      - choanal stenosis
-      - cholecystectomy 1994
-      - chordee
-      - choroid plexus cyst
-      - chronic lung disease-prematurity
-      - chronic renal insufficiency
-      - cleft lip
-      - cleft palate
-      - clindactyly of fifth digits, l partial simian crease
-      - clinodactyly 5th finger
-      - clinodactyly, right hand
-      - club foot
-      - clubbing
-      - coarctation of aorta
-      - coloboma
-      - conductive hearing impairment
-      - congenital blindness
-      - congenital bulbar palsy
-      - congenital cystic adenomatoid malformation
-      - congenital deafness, r pinna cupped.
-      - congenital hemivertebra
-      - congenital hip dysplasia
-      - congenital hypoglycemia
-      - congenital hypothyroidism
-      - congenital scar from eye to scalp per mom
-      - congenital scoliosis
-      - conotruncal left-sided lesion
-      - craniosynostosis
-      - cupped ears
-      - cutaneous cyst
-      - cutis aplasia
-      - cystic hygroma
-      - cystic or polycystic kidney
-      - dandy-walker malformation
-      - dandy-walker malformation
-      - decrease vit k and factor xii deficiency
-      - decreased thenar eminence
-      - deformity of the right anterolateral abdominal wall
-      - delayed puberty-no facial hair,pubic or underarm hair.
-      - developmental & learning issues
-      - developmental delay
-      - dextrocardia
-      - diaphragmatic hernia
-      - dilatation of the cerebral artery
-      - distal limb deformities and radial anomaly
-      - dolichocephaly with bony synostosis of sagittal structure.
-      - dolichochocehaly
-      - double aortic arch
-      - double kidney
-      - double left renal collecting systems and ureters
-      - downslanting
-      - downslanting palepbral fissures
-      - duane anomaly
-      - duodenal atresia
-      - dysmorphic facies
-      - dysplastic kidney
-      - ear pit
-      - ear tag
-      - enlarged
-      - enlarged tranverse liver
-      - epibulbar dermoid
-      - epicanthal folds
-      - esophageal atresai
-      - esophageal atresia
-      - esophageal hemangioma
-      - esophageal reflux
-      - esophagitis. g-tube.
-      - esotropia
-      - excess nuchal skin
-      - exotropia
-      - exposed to toxoplasma in utero - born negative
-      - extra digit bilat
-      - extra rib
-      - eye deviation"" per note
-      - facial hemangioma
-      - factor v leiden
-      - factor v leiden heterozygous, mthfr heterozygous
-      - factor xii deficiency
-      - flat face
-      - foot polydactyly
-      - foot syndactyly
-      - frequent episodes of migratory atelectasis
-      - frontal bossing (occipital protuberance)
-      - fused vertebrae
-      - gastroesophageal reflux
-      - gastroschisis
-      - gerd
-      - glaucoma
-      - global developmental delay, hypotonia
-      - gross motor delay
-      - hallux valgus
-      - hamartoma
-      - hand polydactyly
-      - hand syndactyly
-      - hearing impairment
-      - hearing loss
-      - hemangioma
-      - hemangioma
-      - hemi-vertebrae
-      - hemiplegic cerebral palsy; abnormal gait
-      - hepatic hemangioma
-      - hernia x2 type unk
-      - hernia, type unk
-      - heterotaxy
-      - heterotaxy syndrome
-      - high arched
-      - high arched and narrowed
-      - high palate
-      - high riding testicles
-      - hirschsprung's disease
-      - holoprosencephaly
-      - horner syndrome
-      - horseshoe kidney
-      - hydrocele
-      - hydroceles
-      - hydrocephalus
-      - hydrocephalus
-      - hydronephrosis
-      - hypercholesterolemia
-      - hyperechoic renal cortex
-      - hyperpigmented lesions
-      - hypertelorism
-      - hypertonic
-      - hypogammaglobulinemia
-      - hypoglycemia
-      - hypoglycemia, hypoparathyroidism
-      - hypogonadotropic hypogonadism
-      - hypoplasia l mainstem bronchus
-      - hypoplasia of kidney
-      - hypoplasia of the brainstem
-      - hypoplastic
-      - hypoplastic corpus callosum, vermis hypoplasia
-      - hypoplastic left heart syndrome
-      - hypoplastic left thumb
-      - hypoplastic right side, anteriorly displaced
-      - hypoplastic thymus
-      - hypospadias
-      - hypotelorism, downslanted palpebral fissures
-      - hypotelorism, downslanting papebral fissures
-      - hypothyroid
-      - hypothyroidism
-      - hypothyroidism (update )
-      - hypothyroidism, hyperbilirubinemia
-      - hypothyroidism, vit d deficiency
-      - hypotonia
-      - hypotonia lower extremities
-      - hypotonia, pt with head lag, cannot sit on her own
-      - idiopathic short stature
-      - ileal atresia
-      - immune globulin deficiency for unknown reasons
-      - imperforate or atretic anus
-      - incompletely formed t10
-      - indirect hyperbilirubinemia
-      - infantile hepatic hemangioma
-      - inguinal hernia
-      - interrupted aortic arch
-      - intestinal hemangioma
-      - intraretinal hemorrhages
-      - intrathoracic hemangioma
-      - inverted bronchial pattern
-      - juvenile rheumatoid arthritis
-      - klippel-feil syndrome
-      - l ureterocele with absent r kidney
-      - labial adhesions
-      - labial hemangioma
-      - laryngeal hemangioma
-      - laryngo-bronchio tracheomalacia
-      - late onset of puberty/growth hormone deficiency
-      - learning disability, adhd
-      - left ear microtia
-      - left hand single palmar crease, clinodactyly
-      - left microphthalmia
-      - left pyelectasis
-      - left sided auricular skin tags as well as one tag on left cheek.
-      - left sided hemivertebrae
-      - left transverse crease
-      - left ventricular outflow tract obstruction
-      - left-sided or midline liver
-      - leg length discrepancy and short stature
-      - liver hepatomegaly
-      - low growth factor/idiopathic short stature
-      - low lying conus at s1-2 w/ fatty filum
-      - low muscle tone
-      - low set ears
-      - ls myelomeningocele
-      - lumbosacral hemangioma
-      - lung hypoplasia
-      - macrocephaly
-      - macroglossia
-      - malrotation
-      - meatus stenosis
-      - medical record indicates that she had a cyst in her brain
-      - metatarsus adductus bilaterally
-      - metopic prominence
-      - microcephaly
-      - micrognathia
-      - micropenis
-      - microphthalmia and cloudy corneas
-      - mild global developmental delay
-      - mild ligamentous laxity
-      - mild rop ou
-      - mild upper pole caliectasis
-      - mildly high-arched
-      - mildly hypoplastic proximal thumbs
-      - mildly proptotic eyes
-      - mildly short
-      - missing rib
-      - missing teeth
-      - monoparesis of right arm
-      - moragni hernia
-      - muscle tone
-      - myopia
-      - narrow forehead
-      - neck bent to one side;needed pt
-      - neural tube defect
-      - neurogenic bladder
-      - no humerus, radius/ulna or hand bones on the left side
-      - non-functioning rt. kidney, obstruction of bladder outlet, hydroureteral nephrosis of the lt. kidney
-      - nystagmus
-      - omphalocele
-      - optic atrophy
-      - optic nerve hypoplasia
-      - osteopenia (updated )
-      - overfolded superior helices
-      - overlapping toes on right: 4th overlaps 5th
-      - overriding coronal sutures
-      - overriding helices and relatively small
-      - palpebral fissures
-      - pancreas not seen on ultrasound
-      - pancreatitis
-      - paraspinal hemangioma
-      - parietal encephalocele
-      - parietal encephalocele, plagiocephaly
-      - patent ductus arteriosus
-      - patent foramen ovale
-      - pectus carinatum
-      - pectus excavatum
-      - pectus excavatum
-      - pelvic kidney
-      - pelviectasis
-      - periauricular skin tag
-      - pericallsol lipoma; splenium of corpus callosum
-      - perineal hemangioma
-      - periventricular leukomalacia
-      - pheochromocytoma  surgery
-      - phimosis
-      - pituitary gland cyst
-      - plagiocephaly
-      - plagiocephaly, triangular shaped in coronal plane
-      - pointy
-      - pointy superiorly
-      - polymicrogyria
-      - polymicrogyria
-      - polysplenia
-      - port wine stain
-      - portacaval shunt
-      - posterior embryotoxon
-      - posteriorly rotated
-      - posteriorly set
-      - prominant eyes, long eyelashes, midface hypoplasia
-      - prominent
-      - prominent labia
-      - proptotic, long eyelashes
-      - protein losing enteropathy
-      - protein-losing enteropathy: celiac confirmed
-      - ptosis
-      - pulmonary hypertension
-      - pulmonary hypertension in newborn period
-      - pulmonary lymphangiectasia
-      - pvl
-      - pyelectasis
-      - pyloric stenosis
-      - r and l kidneys pelvicaliectasis
-      - r ear is smaller in size
-      - r ear long and underdeveloped
-      - r ear overfolded and posteriorly rotated; l ear slightly pointed
-      - r kidney is absent
-      - rail road track deformity
-      - rectourethral fistula
-      - rectovaginal fistula
-      - rectovestibular fistula
-      - remnants of the hyaloid vascular system
-      - renal agenesis
-      - retropharyngeal hemangioma
-      - reversed pulmonary anatomy (l-sided on r, r on l)
-      - rh abo incompatible
-      - right aortic arch
-      - right sided sternocleidomastoid contracture
-      - right-sided stomach
-      - rt-sided stomach
-      - rt-sided stomach & rt-sided multi-lobulated spleen
-      - sacral agenesis with absent coccyx and missing vertebrae at s1
-      - sacral dimple
-      - sacral hemangioma
-      - scimitar syndrome
-      - sclerae anicteric
-      - segmental abnormality of sacrum
-      - segmental anomalies involving upper thoracic spine
-      - seizure disorder
-      - seizure disorder.
-      - seizures
-      - seizures related to hypocalcemia
-      - sensorineural hearing impairment
-      - severe developmental delay
-      - severe developmental delay, non-verbal, autistic, history of seizures
-      - severe seizures
-      - shallow acetabula
-      - short
-      - short achilles tendon on one side
-      - short frenulum, hypoplastic left mandible
-      - short neck
-      - short palpebral fissures
-      - short stature
-      - short sternum
-      - short toe bones 4th/5th digits
-      - short, sloping forehead with prominent occiput
-      - short, thick
-      - shortened long bones
-      - single kidney
-      - sinus dermal tract
-      - situs inversus
-      - skin tag on lower part of sternum
-      - skin tags
-      - skintags after the 5th digit on each hand.
-      - slight redundancy in helices
-      - slightly upslanted palpebral fissures
-      - sloped forehead, narrow
-      - small
-      - small anterior fontanelle
-      - small lungs
-      - small maxilla/mandible on right side
-      - small mouth,thin upper lip
-      - small pituitary gland
-      - small right kidney
-      - spina bifida
-      - spleen hemangioma
-      - squared helix
-      - sternal pit
-      - sternum asymmetry
-      - stiff musculature
-      - strabismus
-      - stricture or obstruction and medical nec
-      - stridor, left vocal cord paralysis
-      - stroke and seizure per physician note
-      - subglottic hemangioma
-      - subglottic stenosis
-      - subject has cp.
-      - submucosal cleft palate
-      - supernumerary nipples
-      - supraglottic hemangioma
-      - supraumbilical raphe
-      - tapering fingers
-      - tarsal coalition
-      - telangiectasia
-      - tethered cord malformation sequence
-      - tetralogy of fallot
-      - tetralogy of fallot
-      - thick helices
-      - thickened rib, mild scoliosis, difuse osteopenia
-      - thin lips, short philtrum
-      - thin upper lip
-      - thoracic spinal cord syrinx
-      - thrombocytopenia
-      - thrush
-      - tibial torsion,
-      - tongue-tied
-      - torticollis
-      - tortous retinal vessels
-      - tracheal stenosis
-      - tracheal web
-      - tracheoesophageal fistula
-      - umbilical hernia
-      - underdeveloped ears
-      - underdeveloped pelvis, lower extremity contractures
-      - underdeveloped thenar prominence
-      - undescended testis
-      - unilateral coronal synostosis
-      - upslanting palpebrals
-      - ureteral abnormalities
-      - ureterocele, right vesicoureteric reflux, grade 1
-      - ureteropelvic junction obstruction
-      - varicoceles and phimosis.
-      - vascular ring
-      - ventral displacement of meatus
-      - ventricular septal defect
-      - very dry skin""
-      - visceral hemangioma
-      - visual deficit
-      - vulvar hemangioma
-      - webbed neck
-      - wide-spaced big toe
-      - wide-spaced nipples
+      - "2 vessel cord"
+      - "2 vessel umbilical cord"
+      - "3 cm. liver"
+      - "3 facial skin tags"
+      - "3 fontanelles"
+      - "abnormal abdominal situs"
+      - "abnormal aorta"
+      - "abnormal aortic valve"
+      - "abnormal atrial septum"
+      - "abnormal atrioventricular connection"
+      - "abnormal cardiac situs"
+      - "abnormal carotid artery morphology"
+      - "abnormal cerebellum morphology"
+      - "abnormal cervical and thoracic bodies"
+      - "abnormal coronary artery"
+      - "abnormal fetal calvarium"
+      - "abnormal fingers but not thumb"
+      - "abnormal hepatic vein"
+      - "abnormal left atrium"
+      - "abnormal left ventricle"
+      - "abnormal mitral valve"
+      - "abnormal pulmonary artery"
+      - "abnormal pulmonary valve"
+      - "abnormal pulmonary vein"
+      - "abnormal right atrium"
+      - "abnormal right ventricle"
+      - "abnormal systemic vein"
+      - "abnormal thumb"
+      - "abnormal toe"
+      - "abnormal tricuspid valve"
+      - "abnormal ventricular septum"
+      - "abnormal ventriculo-arterial connection"
+      - "abnormality of dental enamel"
+      - "abnormality of the cerebral vasculature"
+      - "abnormality of the optic nerve"
+      - "abnormality of the sternum"
+      - "absent corpus callosum"
+      - "absent or abnormal ear canal"
+      - "absent radius"
+      - "absent sacrum and lumbar spine"
+      - "absent sternal ossification"
+      - "absent thymus"
+      - "agenesis of corpus callosum"
+      - "ambiguous genitalia"
+      - "amblyopia"
+      - "anal skin tag"
+      - "anemia"
+      - "anemia of prematurity"
+      - "ankyloglossia"
+      - "annular pancreas"
+      - "anophthalmia"
+      - "anteriorly placed anus"
+      - "anxiety disorder"
+      - "aortic aneurysm"
+      - "aortic root aneurysm"
+      - "aortic tortuosity"
+      - "arterial stenosis"
+      - "arterial tortuosity"
+      - "ascending tubular aorta aneurysm"
+      - "asplenia"
+      - "assymetric crying facies"
+      - "asthma"
+      - "asymmetric"
+      - "asymmetric mouth movement; hypoplastic left jaw"
+      - "asymmetric sacral cleft, low lying conus terminalis l3"
+      - "asymmetrical gluteal crease"
+      - "atresia of left external ear"
+      - "atresia of the large intestine"
+      - "atrial septal defect"
+      - "atrophic pituitary gland"
+      - "belpharoptosis"
+      - "bicornuate uterus"
+      - "bicuspid aortic valve"
+      - "bifid scrotum"
+      - "bifid sternum"
+      - "bifid uvula"
+      - "bilat toes 2-4 syndactyly"
+      - "bilateral clinodactyly 5th fingers, left hand simian creases"
+      - "bilateral congenital ossicular anomaly"
+      - "bilateral glue ear"
+      - "bilateral left-sidedness"
+      - "bilateral low vision"
+      - "bilateral right-sidedness"
+      - "bile duct paucity"
+      - "biliary atresia"
+      - "bitemporal hallowing"
+      - "bitemporal narrowing"
+      - "born with retinoblastoma"
+      - "brachycephaly"
+      - "branchial cleft cyst"
+      - "broad big toe"
+      - "butterfly vertebrae"
+      - "cafe au lait spots"
+      - "cataracts"
+      - "caudal regression syndrome"
+      - "cecal carcinoma"
+      - "central hypothyrodism"
+      - "cephalohematoma, caput succedaneum"
+      - "cerebellar cyst"
+      - "cerebellar dysplasia"
+      - "cerebellar glioma"
+      - "cerebellar hypoplasia"
+      - "cerebellar vermis hypoplasia"
+      - "cerebral atrophy"
+      - "cerebral hypoplasia"
+      - "cervical instability"
+      - "chiari malformation"
+      - "choanal atresia"
+      - "choanal stenosis"
+      - "cholecystectomy  1994"
+      - "chordee"
+      - "choroid plexus cyst"
+      - "chronic lung disease-prematurity"
+      - "chronic renal insufficiency"
+      - "cleft lip"
+      - "cleft palate"
+      - "clindactyly of fifth digits, l partial simian crease"
+      - "clinodactyly 5th finger"
+      - "clinodactyly, right hand"
+      - "club foot"
+      - "clubbing"
+      - "coarctation of aorta"
+      - "coloboma"
+      - "conductive hearing impairment"
+      - "congenital blindness"
+      - "congenital bulbar palsy"
+      - "congenital cystic adenomatoid malformation"
+      - "congenital deafness, r pinna cupped."
+      - "congenital hemivertebra"
+      - "congenital hip dysplasia"
+      - "congenital hypoglycemia"
+      - "congenital hypothyroidism"
+      - "congenital scar from eye to scalp per mom"
+      - "congenital scoliosis"
+      - "conotruncal left-sided lesion"
+      - "craniosynostosis"
+      - "cupped ears"
+      - "cutaneous cyst"
+      - "cutis aplasia"
+      - "cystic hygroma"
+      - "cystic or polycystic kidney"
+      - "dandy-walker malformation"
+      - "decrease vit k and factor xii deficiency"
+      - "decreased thenar eminence"
+      - "deformity of the right anterolateral abdominal wall"
+      - "delayed puberty-no facial hair,pubic or underarm hair."
+      - "developmental & learning issues"
+      - "developmental delay"
+      - "dextrocardia"
+      - "diaphragmatic hernia"
+      - "dilatation of the cerebral artery"
+      - "distal limb deformities and radial anomaly"
+      - "dolichocephaly with bony synostosis of sagittal structure."
+      - "dolichochocehaly"
+      - "double aortic arch"
+      - "double kidney"
+      - "double left renal collecting systems and ureters"
+      - "downslanting"
+      - "downslanting palepbral fissures"
+      - "duane anomaly"
+      - "duodenal atresia"
+      - "dysmorphic facies"
+      - "dysplastic kidney"
+      - "ear pit"
+      - "ear tag"
+      - "enlarged"
+      - "enlarged tranverse liver"
+      - "epibulbar dermoid"
+      - "epicanthal folds"
+      - "esophageal atresai"
+      - "esophageal atresia"
+      - "esophageal hemangioma"
+      - "esophageal reflux"
+      - "esophagitis.  g-tube."
+      - "esotropia"
+      - "excess nuchal skin"
+      - "exotropia"
+      - "exposed to toxoplasma in utero - born negative"
+      - "extra digit bilat"
+      - "extra rib"
+      - "eye deviation per note"
+      - "facial hemangioma"
+      - "factor v leiden"
+      - "factor v leiden heterozygous, mthfr heterozygous"
+      - "factor xii deficiency"
+      - "flat face"
+      - "foot polydactyly"
+      - "foot syndactyly"
+      - "frequent episodes of migratory atelectasis"
+      - "frontal bossing (occipital protuberance)"
+      - "fused vertebrae"
+      - "gastroesophageal reflux"
+      - "gastroschisis"
+      - "gerd"
+      - "glaucoma"
+      - "global developmental delay, hypotonia"
+      - "gross motor delay"
+      - "hallux valgus"
+      - "hamartoma"
+      - "hand polydactyly"
+      - "hand syndactyly"
+      - "hearing impairment"
+      - "hearing loss"
+      - "hemangioma"
+      - "hemi-vertebrae"
+      - "hemiplegic cerebral palsy; abnormal gait"
+      - "hepatic hemangioma"
+      - "hernia x2 type unk"
+      - "hernia, type unk"
+      - "heterotaxy"
+      - "heterotaxy syndrome"
+      - "high arched"
+      - "high arched and narrowed"
+      - "high palate"
+      - "high riding testicles"
+      - "hirschsprung's disease"
+      - "holoprosencephaly"
+      - "horner syndrome"
+      - "horseshoe kidney"
+      - "hydrocele"
+      - "hydroceles"
+      - "hydrocephalus"
+      - "hydronephrosis"
+      - "hypercholesterolemia"
+      - "hyperechoic renal cortex"
+      - "hyperpigmented lesions"
+      - "hypertelorism"
+      - "hypertonic"
+      - "hypogammaglobulinemia"
+      - "hypoglycemia"
+      - "hypoglycemia, hypoparathyroidism"
+      - "hypogonadotropic hypogonadism"
+      - "hypoplasia l mainstem bronchus"
+      - "hypoplasia of kidney"
+      - "hypoplasia of the brainstem"
+      - "hypoplastic"
+      - "hypoplastic corpus callosum, vermis hypoplasia"
+      - "hypoplastic left heart syndrome"
+      - "hypoplastic left thumb"
+      - "hypoplastic right side, anteriorly displaced"
+      - "hypoplastic thymus"
+      - "hypospadias"
+      - "hypotelorism, downslanted palpebral fissures"
+      - "hypotelorism, downslanting papebral fissures"
+      - "hypothyroid"
+      - "hypothyroidism"
+      - "hypothyroidism (update )"
+      - "hypothyroidism, hyperbilirubinemia"
+      - "hypothyroidism, vit d deficiency"
+      - "hypotonia"
+      - "hypotonia lower extremities"
+      - "hypotonia, pt with head lag, cannot sit on her own"
+      - "idiopathic short stature"
+      - "ileal atresia"
+      - "immune globulin deficiency for unknown reasons"
+      - "imperforate or atretic anus"
+      - "incompletely formed t10"
+      - "indirect hyperbilirubinemia"
+      - "infantile hepatic hemangioma"
+      - "inguinal hernia"
+      - "interrupted aortic arch"
+      - "intestinal hemangioma"
+      - "intraretinal hemorrhages"
+      - "intrathoracic hemangioma"
+      - "inverted bronchial pattern"
+      - "juvenile rheumatoid arthritis"
+      - "klippel-feil syndrome"
+      - "l ureterocele with absent r kidney"
+      - "labial adhesions"
+      - "labial hemangioma"
+      - "laryngeal hemangioma"
+      - "laryngo-bronchio tracheomalacia"
+      - "late onset of puberty/growth hormone deficiency"
+      - "learning disability, adhd"
+      - "left ear microtia"
+      - "left hand single palmar crease, clinodactyly"
+      - "left microphthalmia"
+      - "left pyelectasis"
+      - "left sided auricular skin tags as well as one tag on left cheek."
+      - "left sided hemivertebrae"
+      - "left transverse crease"
+      - "left ventricular outflow tract obstruction"
+      - "left-sided or midline liver"
+      - "leg length discrepancy and short stature"
+      - "liver hepatomegaly"
+      - "low growth factor/idiopathic short stature"
+      - "low lying conus at s1-2 w/ fatty filum"
+      - "low muscle tone"
+      - "low set ears"
+      - "ls myelomeningocele"
+      - "lumbosacral hemangioma"
+      - "lung hypoplasia"
+      - "macrocephaly"
+      - "macroglossia"
+      - "malrotation"
+      - "meatus stenosis"
+      - "medical record indicates that she had a cyst in her brain"
+      - "metatarsus adductus bilaterally"
+      - "metopic prominence"
+      - "microcephaly"
+      - "micrognathia"
+      - "micropenis"
+      - "microphthalmia and cloudy corneas"
+      - "mild global developmental delay"
+      - "mild ligamentous laxity"
+      - "mild rop ou"
+      - "mild upper pole caliectasis"
+      - "mildly high-arched"
+      - "mildly hypoplastic proximal thumbs"
+      - "mildly proptotic eyes"
+      - "mildly short"
+      - "missing rib"
+      - "missing teeth"
+      - "monoparesis of right arm"
+      - "moragni hernia"
+      - "muscle tone"
+      - "myopia"
+      - "narrow forehead"
+      - "neck bent to one side;needed pt"
+      - "neural tube defect"
+      - "neurogenic bladder"
+      - "no humerus, radius/ulna or hand bones on the left side"
+      - "non-functioning rt. kidney, obstruction of bladder outlet, hydroureteral nephrosis of the lt. kidney"
+      - "nystagmus"
+      - "omphalocele"
+      - "optic atrophy"
+      - "optic nerve hypoplasia"
+      - "osteopenia (updated )"
+      - "overfolded superior helices"
+      - "overlapping toes on right- 4th overlaps 5th"
+      - "overriding coronal sutures"
+      - "overriding helices and relatively small"
+      - "palpebral fissures"
+      - "pancreas not seen on ultrasound"
+      - "pancreatitis"
+      - "paraspinal hemangioma"
+      - "parietal encephalocele"
+      - "parietal encephalocele, plagiocephaly"
+      - "patent ductus arteriosus"
+      - "patent foramen ovale"
+      - "pectus carinatum"
+      - "pectus excavatum"
+      - "pelvic kidney"
+      - "pelviectasis"
+      - "periauricular skin tag"
+      - "pericallsol lipoma; splenium of corpus callosum"
+      - "perineal hemangioma"
+      - "periventricular leukomalacia"
+      - "pheochromocytoma   surgery"
+      - "phimosis"
+      - "pituitary gland cyst"
+      - "plagiocephaly"
+      - "plagiocephaly, triangular shaped in coronal plane"
+      - "pointy"
+      - "pointy superiorly"
+      - "polymicrogyria"
+      - "polysplenia"
+      - "port wine stain"
+      - "portacaval shunt"
+      - "posterior embryotoxon"
+      - "posteriorly rotated"
+      - "posteriorly set"
+      - "prominant eyes, long eyelashes, midface hypoplasia"
+      - "prominent"
+      - "prominent labia"
+      - "proptotic, long eyelashes"
+      - "protein losing enteropathy"
+      - "protein-losing enteropathy- celiac confirmed"
+      - "ptosis"
+      - "pulmonary hypertension"
+      - "pulmonary hypertension in newborn period"
+      - "pulmonary lymphangiectasia"
+      - "pvl"
+      - "pyelectasis"
+      - "pyloric stenosis"
+      - "r and l kidneys pelvicaliectasis"
+      - "r ear is smaller in size"
+      - "r ear long and underdeveloped"
+      - "r ear overfolded and posteriorly rotated; l ear slightly pointed"
+      - "r kidney is absent"
+      - "rail road track deformity"
+      - "rectourethral fistula"
+      - "rectovaginal fistula"
+      - "rectovestibular fistula"
+      - "remnants of the hyaloid vascular system"
+      - "renal agenesis"
+      - "retropharyngeal hemangioma"
+      - "reversed pulmonary anatomy (l-sided on r, r on l)"
+      - "rh abo incompatible"
+      - "right aortic arch"
+      - "right sided sternocleidomastoid contracture"
+      - "right-sided stomach"
+      - "rt-sided stomach"
+      - "rt-sided stomach & rt-sided multi-lobulated spleen"
+      - "sacral agenesis with absent coccyx and missing vertebrae at s1"
+      - "sacral dimple"
+      - "sacral hemangioma"
+      - "scimitar syndrome"
+      - "sclerae anicteric"
+      - "segmental abnormality of sacrum"
+      - "segmental anomalies involving upper thoracic spine"
+      - "seizure disorder"
+      - "seizure disorder."
+      - "seizures"
+      - "seizures related to hypocalcemia"
+      - "sensorineural hearing impairment"
+      - "severe developmental delay"
+      - "severe developmental delay, non-verbal, autistic, history of seizures"
+      - "severe seizures"
+      - "shallow acetabula"
+      - "short"
+      - "short achilles tendon on one side"
+      - "short frenulum, hypoplastic left mandible"
+      - "short neck"
+      - "short palpebral fissures"
+      - "short stature"
+      - "short sternum"
+      - "short toe bones 4th/5th digits"
+      - "short, sloping forehead with prominent occiput"
+      - "short, thick"
+      - "shortened long bones"
+      - "single kidney"
+      - "sinus dermal tract"
+      - "situs inversus"
+      - "skin tag on lower part of sternum"
+      - "skin tags"
+      - "skintags after the 5th digit on each hand."
+      - "slight redundancy in helices"
+      - "slightly upslanted palpebral fissures"
+      - "sloped forehead, narrow"
+      - "small"
+      - "small anterior fontanelle"
+      - "small lungs"
+      - "small maxilla/mandible on right side"
+      - "small mouth,thin upper lip"
+      - "small pituitary gland"
+      - "small right kidney"
+      - "spina bifida"
+      - "spleen hemangioma"
+      - "squared helix"
+      - "sternal pit"
+      - "sternum asymmetry"
+      - "stiff musculature"
+      - "strabismus"
+      - "stricture or obstruction and medical nec"
+      - "stridor, left vocal cord paralysis"
+      - "stroke and seizure per physician note"
+      - "subglottic hemangioma"
+      - "subglottic stenosis"
+      - "subject has cp."
+      - "submucosal cleft palate"
+      - "supernumerary nipples"
+      - "supraglottic hemangioma"
+      - "supraumbilical raphe"
+      - "tapering fingers"
+      - "tarsal coalition"
+      - "telangiectasia"
+      - "tethered cord malformation sequence"
+      - "tetralogy of fallot"
+      - "thick helices"
+      - "thickened rib, mild scoliosis, difuse osteopenia"
+      - "thin lips, short philtrum"
+      - "thin upper lip"
+      - "thoracic spinal cord syrinx"
+      - "thrombocytopenia"
+      - "thrush"
+      - "tibial torsion,"
+      - "tongue-tied"
+      - "torticollis"
+      - "tortous retinal vessels"
+      - "tracheal stenosis"
+      - "tracheal web"
+      - "tracheoesophageal fistula"
+      - "umbilical hernia"
+      - "underdeveloped ears"
+      - "underdeveloped pelvis, lower extremity contractures"
+      - "underdeveloped thenar prominence"
+      - "undescended testis"
+      - "unilateral coronal synostosis"
+      - "upslanting palpebrals"
+      - "ureteral abnormalities"
+      - "ureterocele, right vesicoureteric reflux, grade 1"
+      - "ureteropelvic junction obstruction"
+      - "varicoceles and phimosis."
+      - "vascular ring"
+      - "ventral displacement of meatus"
+      - "ventricular septal defect"
+      - "very dry skin"
+      - "visceral hemangioma"
+      - "visual deficit"
+      - "vulvar hemangioma"
+      - "webbed neck"
+      - "wide-spaced big toe"
+      - "wide-spaced nipples"
     enumDef:
       - enumeration: 2 vessel cord
         source: hp
@@ -980,10 +973,6 @@ properties:
         source: hp
         term_id: HP:0002059
         version_date:
-      - enumeration: cerebral atrophy
-        source: hp
-        term_id: HP:0002059
-        version_date:
       - enumeration: cerebral hypoplasia
         source: hp
         term_id: HP:0006872
@@ -1131,10 +1120,6 @@ properties:
       - enumeration: cystic or polycystic kidney
         source: hp
         term_id: HP:0000113
-        version_date:
-      - enumeration: dandy-walker malformation
-        source: hp
-        term_id: HP:0001305
         version_date:
       - enumeration: dandy-walker malformation
         source: hp
@@ -1383,10 +1368,6 @@ properties:
       - enumeration: hearing loss
         source: hp
         term_id: HP:0000405
-        version_date:
-      - enumeration: hemangioma
-        source: hp
-        term_id: HP:0001028
         version_date:
       - enumeration: hemangioma
         source: hp
@@ -1896,7 +1877,7 @@ properties:
         source: hp
         term_id: HP:0000396
         version_date:
-      - enumeration: overlapping toes on right: 4th overlaps 5th
+      - enumeration: overlapping toes on right- 4th overlaps 5th
         source: hp
         term_id: HP:0001845
         version_date:
@@ -1943,10 +1924,6 @@ properties:
       - enumeration: pectus carinatum
         source: hp
         term_id: HP:0000768
-        version_date:
-      - enumeration: pectus excavatum
-        source: hp
-        term_id: HP:0000767
         version_date:
       - enumeration: pectus excavatum
         source: hp
@@ -2008,10 +1985,6 @@ properties:
         source: hp
         term_id: HP:0002126
         version_date:
-      - enumeration: polymicrogyria
-        source: hp
-        term_id: HP:0002126
-        version_date:
       - enumeration: polysplenia
         source: hp
         term_id: HP:0001748
@@ -2056,7 +2029,7 @@ properties:
         source: hp
         term_id: HP:0002243
         version_date:
-      - enumeration: protein-losing enteropathy: celiac confirmed
+      - enumeration: protein-losing enteropathy- celiac confirmed
         source: hp
         term_id: HP:0002243
         version_date:
@@ -2424,10 +2397,6 @@ properties:
         source: hp
         term_id: HP:0001636
         version_date:
-      - enumeration: tetralogy of fallot
-        source: hp
-        term_id: HP:0001636
-        version_date:
       - enumeration: thick helices
         source: hp
         term_id: HP:0000391
@@ -2540,7 +2509,7 @@ properties:
         source: hp
         term_id: HP:0001629
         version_date:
-      - enumeration: very dry skin""
+      - enumeration: very dry skin
         source: hp
         term_id: HP:0000958
         version_date:

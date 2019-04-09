@@ -21,7 +21,7 @@ systemProperties:
   - state
 
 links:
-  - exclusive: true
+  - exclusive: false
     required: true
     subgroup:
       - name: submitted_aligned_reads_files
@@ -38,6 +38,7 @@ links:
         required: false
 
 required:
+  - type
   - submitter_id
   - workflow_link
   - workflow_type

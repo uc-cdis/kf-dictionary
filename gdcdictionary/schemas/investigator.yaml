@@ -31,6 +31,7 @@ links:
     required: true
 
 required:
+  - type
   - submitter_id
   - projects
 
@@ -50,4 +51,4 @@ properties:
     description: "Institution of the investigator." # TOREVIEW
 
   projects:
-    $ref: "_definitions.yaml#/to_one"
+    $ref: "_definitions.yaml#/to_one_project"

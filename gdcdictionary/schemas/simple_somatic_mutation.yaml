@@ -49,6 +49,7 @@ required:
   - data_type
   - data_format
   - experimental_strategy
+  - type
 
 uniqueKeys:
   - [ id ]

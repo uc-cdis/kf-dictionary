@@ -21,6 +21,7 @@ systemProperties:
   - state
   - file_state
   - error_type
+  - type
 
 links:
   - exclusive: false
@@ -53,6 +54,7 @@ links:
 
 
 required:
+  - type
   - submitter_id
   - file_name
   - file_size
