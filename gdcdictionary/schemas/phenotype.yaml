@@ -973,10 +973,6 @@ properties:
         source: hp
         term_id: HP:0002059
         version_date:
-      - enumeration: cerebral atrophy
-        source: hp
-        term_id: HP:0002059
-        version_date:
       - enumeration: cerebral hypoplasia
         source: hp
         term_id: HP:0006872
@@ -1124,10 +1120,6 @@ properties:
       - enumeration: cystic or polycystic kidney
         source: hp
         term_id: HP:0000113
-        version_date:
-      - enumeration: dandy-walker malformation
-        source: hp
-        term_id: HP:0001305
         version_date:
       - enumeration: dandy-walker malformation
         source: hp
@@ -1376,10 +1368,6 @@ properties:
       - enumeration: hearing loss
         source: hp
         term_id: HP:0000405
-        version_date:
-      - enumeration: hemangioma
-        source: hp
-        term_id: HP:0001028
         version_date:
       - enumeration: hemangioma
         source: hp
@@ -1941,10 +1929,6 @@ properties:
         source: hp
         term_id: HP:0000767
         version_date:
-      - enumeration: pectus excavatum
-        source: hp
-        term_id: HP:0000767
-        version_date:
       - enumeration: pelvic kidney
         source: hp
         term_id: HP:0000125
@@ -1996,10 +1980,6 @@ properties:
       - enumeration: pointy superiorly
         source: hp
         term_id: HP:0008541
-        version_date:
-      - enumeration: polymicrogyria
-        source: hp
-        term_id: HP:0002126
         version_date:
       - enumeration: polymicrogyria
         source: hp
@@ -2412,10 +2392,6 @@ properties:
       - enumeration: tethered cord malformation sequence
         source: hp
         term_id: HP:0002144
-        version_date:
-      - enumeration: tetralogy of fallot
-        source: hp
-        term_id: HP:0001636
         version_date:
       - enumeration: tetralogy of fallot
         source: hp
