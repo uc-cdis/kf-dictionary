@@ -62,7 +62,7 @@ properties:
 
   vital_status:
     term:
-      $ref: "_terms.yaml#/vital_status"
+      $ref: "_terms.yaml#/age_at_event_days"
     enum:
       - "Deceased"
       - "Alive"
