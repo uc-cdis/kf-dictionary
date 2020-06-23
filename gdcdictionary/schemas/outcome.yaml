@@ -52,22 +52,22 @@ properties:
 
   disease_related:
     description: |
-      Text value describing whether or not the participant’s outcome is related to their disease. For example, whether their deceased status was due to their disease.
+      Whether Dead and cause of death was disease related (Yes)
+      or Dead and cause of death was not disease related (No)
+      or Not Reported
     enum:
       - "Yes"
       - "No"
-      - "Not Reported"
-      - "Reported Unknown"
-      - "Not Applicable"
+      - Not Reported
+      - Reported Unknown
+      - Not Applicable
 
   vital_status:
     term:
       $ref: "_terms.yaml#/age_at_event_days"
     enum:
-      - "Deceased"
-      - "Alive"
-      - "Reported Unknown"
-      - "Not Reported"
+      - Dead
+      - Alive
 
   participants:
     $ref: "_definitions.yaml#/to_one"
