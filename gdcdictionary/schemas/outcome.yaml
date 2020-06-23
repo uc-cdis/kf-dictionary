@@ -56,18 +56,18 @@ properties:
     enum:
       - "Yes"
       - "No"
-      - Not Reported
-      - Reported Unknown
-      - Not Applicable
+      - "Not Reported"
+      - "Reported Unknown"
+      - "Not Applicable"
 
   vital_status:
     term:
       $ref: "_terms.yaml#/vital_status"
     enum:
-      - Deceased
-      - Alive
-      - Reported Unknown
-      - Not Reported
+      - "Deceased"
+      - "Alive"
+      - "Reported Unknown"
+      - "Not Reported"
 
   participants:
     $ref: "_definitions.yaml#/to_one"
