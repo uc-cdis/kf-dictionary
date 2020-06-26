@@ -105,12 +105,5 @@ properties:
       TBD
     type: string
 
-  participant_id:
-
-
-
-
-    
-
   participants:
     $ref: "_definitions.yaml#/to_one"
