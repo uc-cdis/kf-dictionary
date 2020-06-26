@@ -43,6 +43,8 @@ required:
   - type
   - submitter_id
   - file_name
+  - file_size
+  - md5sum
   - data_type
   - data_format
   - data_category
