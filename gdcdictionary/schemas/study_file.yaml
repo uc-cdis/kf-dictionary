@@ -43,6 +43,9 @@ required:
   - type
   - submitter_id
   - file_name
+  - data_type
+  - data_format
+  - data_category
 
 uniqueKeys:
   - [ id ]
