@@ -31,7 +31,7 @@ links:
 required:
   - type
   - participants
-  - phenotype
+  - source_text_phenotype
   - observed
   - submitter_id
 
@@ -2579,7 +2579,6 @@ properties:
     description: |
       Files for which the HPO ID was negatively observed. 
     type: string
-
 
   snomed_phenotype_not_observed:
     description: |
