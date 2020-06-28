@@ -45,5 +45,14 @@ properties:
     description: "Name given to the family by contributor"
     type: string
 
+  family_composition:
+    description: "A calculated value based on the family members present with genomic data within a participant’s pedigree."
+    enum:
+      - "proband_only"
+      - "duo"
+      - "duo_plus"
+      - "trio" 
+      - "trio_plus"
+
   projects:
     $ref: "_definitions.yaml#/to_one_project"
