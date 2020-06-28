@@ -47,44 +47,57 @@ uniqueKeys:
 # Case properties
 properties:
   $ref_ubiq: "_definitions.yaml#/ubiquitous_properties"
-  days_to_lost_to_followup:
-    term:
-      $ref: "_terms.yaml#/days_to_lost_to_followup"
-    type: integer
-  disease_type:
-    term:
-      $ref: "_terms.yaml#/disease_type"
-    type: string
-  index_date:
-    term:
-      $ref: "_terms.yaml#/index_date"
-    enum:
-      - Diagnosis
-      - First Patient Visit
-      - Study Enrollment
-  lost_to_followup:
-    term:
-      $ref: "_terms.yaml#/lost_to_followup"
-    enum:
-      - "Yes"
-      - "No"
-  primary_site:
-    term:
-      $ref: "_terms.yaml#/primary_site"
-    type: string
-  is_proband:
-    description: "Denotes whether participant is proband of study"
-    type: boolean
-  external_id:
-    term:
-      $ref: "_terms.yaml#/external_id"
-    type: string
+
   family_id:
     description: "Id for the participants grouped by family"
     type: string
-  consent_type:
-    description: "Type of the consent participant belongs to"
-    type: string
+
+  alias_group:
+    description: "For potential future use, currently not populated with data"
+    type: string 
+
+  available_data_types:
+    description: "The File data types available for the participants."
+    type: string 
+
+  ethnicity:
+    description: "An individual’s self-described social and cultural grouping, specifically whether an individual describes themselves as Hispanic or Latino."
+    enum:
+      - Not Hispanic or Latino
+      - Hispanic or Latino
+      - Not Reported
+      - Reported Unknown
+
+  gender:
+    description: "Text designations that identify gender. Gender is described as the assemblage of properties that distinguish people on the basis of their societal roles. This value is self-reported and may come from a form, questionnaire, interview, etc."
+    enum:
+      - Female
+      - Male
+      - Reported Unknown
+      - Not Reported
+
+  is_proband:
+    description: "Denotes whether participant is proband of study.  The participant serving as the starting point for enrollment into study, often the first family member seeking medical attention."
+    type: boolean
+  
+  race:
+    description: "An arbitrary classification of a taxonomic group that is a division of a species. It is characterized by shared hereditary, physical attributes and behavior, and in the case of humans, by common history, nationality, or geographic distribution."
+    enum:
+      - White
+      - American Indian or Alaska Native
+      - Black or African American
+      - Asian
+      - Native Hawaiian or Other Pacific Islander
+      - Other
+      - More Than One Race
+      - Reported Unknown
+      - Not Reported
+
+  species:
+  description: "species"
+  type: string 
+
+
   projects:
     $ref: "_definitions.yaml#/to_one_project"
   families:
