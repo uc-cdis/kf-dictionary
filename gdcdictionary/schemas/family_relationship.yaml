@@ -43,11 +43,93 @@ properties:
 
   relative_to_participant_relation:
     description: "Text describing the nature of the relationship (i.e. father, mother, sister, brother)"
-    type: string
+    enum:
+      - Aunt
+      - Brother
+      - Brother-in-law
+      - Brother-Monozygotic Twin
+      - Child
+      - Cousin
+      - Daughter
+      - Father
+      - First cousin once removed
+      - Grandfather
+      - Grandmother
+      - Married in aunt
+      - Married in Husband
+      - Married in-Spouse
+      - Maternal aunt
+      - Maternal cousin
+      - Maternal grandfather
+      - Maternal grandmother
+      - Maternal Great Grandmother
+      - Maternal Great Uncle
+      - Maternal half-sister
+      - Maternal uncle
+      - Mother
+      - Nephew
+      - Other
+      - Paternal aunt
+      - Paternal cousin
+      - Paternal grandfather
+      - Paternal grandmother
+      - Paternal uncle
+      - Sibling
+      - Sister
+      - Son
+      - Spouse
+      - Twin Brother
+      - Twin Sister
+      - Uncle
+      - Uncle-married in
+      - Wife 
+      - Proband
+      - Maternal Granddaughter
 
   participant_to_relative_relation:
     description: "Text describing the nature of the relationship (i.e. father, mother, sister, brother)"
-    type: string
+    enum:
+      - Aunt
+      - Brother
+      - Brother-in-law
+      - Brother-Monozygotic Twin
+      - Child
+      - Cousin
+      - Daughter
+      - Father
+      - First cousin once removed
+      - Grandfather
+      - Grandmother
+      - Married in aunt
+      - Married in Husband
+      - Married in-Spouse
+      - Maternal aunt
+      - Maternal cousin
+      - Maternal grandfather
+      - Maternal grandmother
+      - Maternal Great Grandmother
+      - Maternal Great Uncle
+      - Maternal half-sister
+      - Maternal uncle
+      - Mother
+      - Nephew
+      - Other
+      - Paternal aunt
+      - Paternal cousin
+      - Paternal grandfather
+      - Paternal grandmother
+      - Paternal uncle
+      - Sibling
+      - Sister
+      - Son
+      - Spouse
+      - Twin Brother
+      - Twin Sister
+      - Uncle
+      - Uncle-married in
+      - Wife 
+      - Proband
+      - Maternal Granddaughter
 
   participants:
     $ref: "_definitions.yaml#/to_one"
