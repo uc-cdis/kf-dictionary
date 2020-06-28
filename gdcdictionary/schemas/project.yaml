@@ -134,7 +134,7 @@ properties:
     type: boolean
 
   release_status:
-    description: "Release status of the study."
+    description: "The status of the study within its Data Access Authority."
     enum:
       - Pending
       - Waiting
