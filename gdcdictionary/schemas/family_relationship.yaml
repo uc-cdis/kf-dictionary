@@ -131,5 +131,21 @@ properties:
       - Proband
       - Maternal Granddaughter
 
+  participant1_id:
+    description: "Participant1 ID"
+    type: string
+
+  participant2_id: 
+    description: "Participant2 ID"
+    type: string
+
+  participant1_to_participant2_relation:
+    description: "Participant1 to Participant2 Relation"
+    type: string
+
+  participant2_to_participant1_relation:
+    description: "Participant2 to Participant1 Relation"
+    type: string
+
   participants:
     $ref: "_definitions.yaml#/to_one"
