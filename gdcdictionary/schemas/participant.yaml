@@ -97,6 +97,10 @@ properties:
     description: "species"
     type: string 
 
+  relationship_to_proband:
+    description: "Relation to proband"
+    type: string 
+
   projects:
     $ref: "_definitions.yaml#/to_one_project"
   families:
