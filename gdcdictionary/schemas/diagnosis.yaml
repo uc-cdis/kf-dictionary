@@ -43,69 +43,66 @@ uniqueKeys:
 properties:
   $ref_ubiq: "_definitions.yaml#/ubiquitous_properties"
 
-  age_at_event_days:
-    term:
-      $ref: "_terms.yaml#/age_at_event_days"
-    type:
-      - integer
-      - "null"
-    maximum: 32872
-    minimum: 0
-
-  diagnosis_category:
-    description: "High level diagnosis categorization."
-    enum:
-      - Structural Birth Defect
-      - Cancer
-      - Other
-
-  tumor_location:
-    description: "Location of the tumor."
-    type: string
-
-  primary_diagnosis:
-    term:
-      $ref: "_terms.yaml#/primary_diagnosis"
-    type: string
-
   external_id:
     description: "external id used by contributor"
     type: string
 
-  source_text_diagnosis:
-    description: "Pathological diagnosis"
+  diagnosis:
+    description: |
+      A calculated rollup of a participant’s diagnoses. If the participant has only Cancer diagnoses, the participant’s value is Cancer. If the participant has only Structural Birth Defect diagnoses, the value is Structural Birth Defects.
     type: string
+    
+  diagnosis_source_text:
+    description: |
+      Analysis, and recognition of the presence and nature of disease, condition, or injury from expressed signs and symptoms; also, the scientific determination of any kind; the concise results of such a study/investigation.
+    type: string
+    
+  diagnosis_category:
+    description: |
+      An overarching classification based on the Diagnosis Source Text to aide in quick searching over Cancer and Structural Birth Defects.
+    enum:
+      - Structural Birth Defect
+      - Cancer
+      - Not Reported
 
-  source_text_tumor_location:
-    description: "Location of the tumor"
+  icd_id_diagnosis:
+    description: |
+      ICD10 code for the diagnosis.
     type: string
 
   mondo_id_diagnosis:
     description: |
-      The ID of the term from the Monary Disease Ontology
-      which represents a harmonized diagnosis
+      The Mondo ID associated with the Diagnosis (Source Text) value. Derived by matching the Diagnosis Source Text value with Mondo ID lookups.
     type: string
-
-  icd_id_diagnosis:
-    description: |
-      The ID of the term from the International Classification of Diseases
-      which represents harmonized diagnosis
-    type: string
-
-  uberon_id_tumor_location:
-    term:
-      $ref: "_terms.yaml#/age_at_event_days"
-    type: string
-
+    
   ncit_id_diagnosis:
     description: |
-      The ID term from the National Cancer Institute Thesaurus which represents a
-      harmonized diagnosis
+      The National Cancer Institute Thesaurus (NCIt) ID associated with the Diagnosis (Source Text) value. Derived by matching the Diagnosis Source Text value with NCIt lookups.
     type: string
 
   spatial_descriptor:
     description: |
-      Ontology term that harmonizes the spatial concepts from Biological Spatial Ontology
+      Term to indicate precise, relative anatomical position from where the biospecimen was obtained.
+    type: string
+
+  tumor_location_source_text:
+    description: |
+      Text term from the investigator that describes the anatomic site of the tumor.
+    type: string
+
+  source_text_tumor_location:
+    description: |
+      TBD
+    type: string
+
+  uberon_id_tumor_location:
+    description: |
+      TBD
+    type: string
+
+  spatial_descriptor:
+    description: |
+      TBD
     type: string
 
   participants:

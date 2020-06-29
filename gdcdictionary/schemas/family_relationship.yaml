@@ -43,10 +43,108 @@ properties:
 
   relative_to_participant_relation:
     description: "Text describing the nature of the relationship (i.e. father, mother, sister, brother)"
-    type: string
+    enum:
+      - Aunt
+      - Brother
+      - Brother-in-law
+      - Brother-Monozygotic Twin
+      - Child
+      - Cousin
+      - Daughter
+      - Father
+      - First cousin once removed
+      - Grandfather
+      - Grandmother
+      - Married in aunt
+      - Married in Husband
+      - Married in-Spouse
+      - Maternal aunt
+      - Maternal cousin
+      - Maternal grandfather
+      - Maternal grandmother
+      - Maternal Great Grandmother
+      - Maternal Great Uncle
+      - Maternal half-sister
+      - Maternal uncle
+      - Mother
+      - Nephew
+      - Other
+      - Paternal aunt
+      - Paternal cousin
+      - Paternal grandfather
+      - Paternal grandmother
+      - Paternal uncle
+      - Sibling
+      - Sister
+      - Son
+      - Spouse
+      - Twin Brother
+      - Twin Sister
+      - Uncle
+      - Uncle-married in
+      - Wife 
+      - Proband
+      - Maternal Granddaughter
 
   participant_to_relative_relation:
     description: "Text describing the nature of the relationship (i.e. father, mother, sister, brother)"
+    enum:
+      - Aunt
+      - Brother
+      - Brother-in-law
+      - Brother-Monozygotic Twin
+      - Child
+      - Cousin
+      - Daughter
+      - Father
+      - First cousin once removed
+      - Grandfather
+      - Grandmother
+      - Married in aunt
+      - Married in Husband
+      - Married in-Spouse
+      - Maternal aunt
+      - Maternal cousin
+      - Maternal grandfather
+      - Maternal grandmother
+      - Maternal Great Grandmother
+      - Maternal Great Uncle
+      - Maternal half-sister
+      - Maternal uncle
+      - Mother
+      - Nephew
+      - Other
+      - Paternal aunt
+      - Paternal cousin
+      - Paternal grandfather
+      - Paternal grandmother
+      - Paternal uncle
+      - Sibling
+      - Sister
+      - Son
+      - Spouse
+      - Twin Brother
+      - Twin Sister
+      - Uncle
+      - Uncle-married in
+      - Wife 
+      - Proband
+      - Maternal Granddaughter
+
+  participant1_id:
+    description: "Participant1 ID"
+    type: string
+
+  participant2_id: 
+    description: "Participant2 ID"
+    type: string
+
+  participant1_to_participant2_relation:
+    description: "Participant1 to Participant2 Relation"
+    type: string
+
+  participant2_to_participant1_relation:
+    description: "Participant2 to Participant1 Relation"
     type: string
 
   participants:
