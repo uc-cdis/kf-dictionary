@@ -1,13 +1,16 @@
 # Kids First Data Dictionary
 
 The Kids First data dictionary provides the first
-level of validation for genomic data and minimal clinical elements 
-managed by the Kids First Data Resource Center (KFDRC).
-The general structure and concepts derive from the [GDC Data Dictionary](https://github.com/nci-gdc/gdcdictionary)
-JSON schemas define all the individual entities (nodes) in the
+level of validation for genomic data and minimal clinical elements managed by the Kids First Data Resource Center (KFDRC).
+The general structure and concepts derive from the [GDC Data Dictionary](https://github.com/nci-gdc/gdcdictionary).
+
+Written in YAML, the JSON schemas define all the individual entities (nodes) in the
 data model. Moreover, these schemas define all of the
 relationships (links) between the nodes. Finally, the schemas define
 the valid key-value pairs that can be used to describe the nodes.
+
+Read more information about the Data Dictionary structure in Gen3 here:
+https://github.com/uc-cdis/gen3-userservices-info/blob/master/data_dictionary/data_dictionary_readme.md
 
 ## Data Dictionary Structure
 
