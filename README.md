@@ -1,8 +1,7 @@
 # Kids First Data Dictionary
 
 The Kids First data dictionary provides the first
-level of validation for genomic data and minimal clinical elements
-managed by the Kids First Data Resource Center (KFDRC).
+level of validation for genomic data and minimal clinical elements managed by the Kids First Data Resource Center (KFDRC).
 The general structure and concepts derive from the [GDC Data Dictionary](https://github.com/nci-gdc/gdcdictionary).
 
 Written in YAML, the JSON schemas define all the individual entities (nodes) in the
